@@ -321,3 +321,7 @@
 	path = SemanticMediaWiki
 	url = https://github.com/TopRealm/SemanticMediaWiki
 	branch = master
+[submodule "TemplateData"]
+	path = TemplateData
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TemplateData.git
+	branch = REL1_39
