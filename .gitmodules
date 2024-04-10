@@ -325,3 +325,6 @@
 	path = TemplateData
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TemplateData.git
 	branch = REL1_39
+[submodule "VisualEditor"]
+	path = VisualEditor
+	url = https://git.qiuwen.net.cn/YSARXIV/VisualEditor
