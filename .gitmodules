@@ -328,3 +328,6 @@
 [submodule "VisualEditor"]
 	path = VisualEditor
 	url = https://git.qiuwen.net.cn/YSARXIV/VisualEditor
+[submodule "TabberNeue"]
+	path = TabberNeue
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-TabberNeue
