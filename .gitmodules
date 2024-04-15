@@ -343,3 +343,6 @@
 [submodule "SemanticExtraSpecialProperties"]
 	path = SemanticExtraSpecialProperties
 	url = https://git.qiuwen.net.cn/YSARXIV/SemanticExtraSpecialProperties
+[submodule "RNRSHook"]
+	path = RNRSHook
+	url = https://git.qiuwen.net.cn/Qiuwen/mediawiki-extensions-RNRSHook.git
