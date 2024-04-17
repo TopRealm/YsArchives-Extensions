@@ -340,3 +340,9 @@
 [submodule "RNRSHook"]
 	path = RNRSHook
 	url = https://git.qiuwen.net.cn/Qiuwen/mediawiki-extensions-RNRSHook.git
+[submodule "SemanticDrilldown"]
+	path = SemanticDrilldown
+	url = https://github.com/TopRealm/SemanticDrilldown
+[submodule "SemanticResultFormats"]
+	path = SemanticResultFormats
+	url = https://github.com/TopRealm/SemanticResultFormats
