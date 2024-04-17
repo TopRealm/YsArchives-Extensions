@@ -331,12 +331,6 @@
 [submodule "TabberNeue"]
 	path = TabberNeue
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-TabberNeue
-[submodule "SemanticResultFormats"]
-	path = SemanticResultFormats
-	url = https://git.qiuwen.net.cn/YSARXIV/SemanticResultFormats
-[submodule "SemanticDrilldown"]
-	path = SemanticDrilldown
-	url = https://git.qiuwen.net.cn/YSARXIV/SemanticDrilldown
 [submodule "SemanticScribunto"]
 	path = SemanticScribunto
 	url = https://git.qiuwen.net.cn/YSARXIV/SemanticScribunto
