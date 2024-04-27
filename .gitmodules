@@ -346,6 +346,3 @@
 [submodule "SemanticResultFormats"]
 	path = SemanticResultFormats
 	url = https://github.com/TopRealm/SemanticResultFormats
-[submodule "SearchVue"]
-	path = SearchVue
-	url = https://git.qiuwen.net.cn/YSARXIV/SearchVue.git
