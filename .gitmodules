@@ -346,3 +346,7 @@
 [submodule "SemanticResultFormats"]
 	path = SemanticResultFormats
 	url = https://github.com/TopRealm/SemanticResultFormats
+[submodule "PageViewInfo"]
+	path = PageViewInfo
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-PageViewInfo.git
+	branch = REL1_39
