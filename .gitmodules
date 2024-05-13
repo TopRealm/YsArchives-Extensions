@@ -342,3 +342,6 @@
 [submodule "SemanticResultFormats"]
 	path = SemanticResultFormats
 	url = https://github.com/TopRealm/SemanticResultFormats
+[submodule "ContributionScores"]
+	path = ContributionScores
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-ContributionScores.git
