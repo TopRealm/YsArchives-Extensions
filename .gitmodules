@@ -57,10 +57,6 @@
 	path = ConfirmEdit
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ConfirmEdit
 	branch = REL1_39
-[submodule "ContributionScores"]
-	path = ContributionScores
-	url = https://git.qiuwen.wiki/YSARXIV/mediawiki-extensions-ContributionScores
-	branch = master
 [submodule "CirrusSearch"]
 	path = CirrusSearch
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CirrusSearch
