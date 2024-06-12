@@ -345,3 +345,7 @@
 [submodule "ContributionScores"]
 	path = ContributionScores
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-ContributionScores.git
+[submodule "FeaturedFeeds"]
+	path = FeaturedFeeds
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-FeaturedFeeds.git
+	branch = REL1_39
