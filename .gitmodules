@@ -157,10 +157,6 @@
 	path = MultimediaViewer
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MultimediaViewer
 	branch = REL1_39
-[submodule "NativeSvgHandler"]
-	path = NativeSvgHandler
-	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-NativeSvgHandler
-	branch = REL1_39
 [submodule "NewSignupPage"]
 	path = NewSignupPage
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-NewSignupPage
