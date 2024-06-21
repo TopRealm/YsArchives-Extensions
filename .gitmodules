@@ -15,7 +15,7 @@
 	branch = master
 [submodule "Avatar"]
 	path = Avatar
-	url = https://git.qiuwen.wiki/YSARXIV/MW-Avatar.git
+	url = https://git.qiuwen.net.cn/YSARXIV/MW-Avatar.git
 	branch = master
 [submodule "BetaFeatures"]
 	path = BetaFeatures
@@ -267,7 +267,7 @@
 	branch = master
 [submodule "cldr"]
 	path = cldr
-	url = https://git.qiuwen.wiki/Fork/mediawiki-extensions-cldr
+	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-cldr
 	branch = master
 [submodule "PWA"]
 	path = PWA
