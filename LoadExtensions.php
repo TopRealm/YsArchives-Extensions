@@ -3,7 +3,7 @@
 wfLoadExtension( 'Gadgets', "/www/wwwroot/mw-utils/YsArchives-Extensions/Gadgets/extension.json" );
 wfLoadExtension( 'Matomo', "/www/wwwroot/mw-utils/YsArchives-Extensions/Matomo/extension.json" );
 // Matomo访问信息收集
-require_once "$IP/ysarxiv-settings/MatomoSettings.php";
+require_once "/www/wwwroot/mw-utils/YsArchives-Settings/MatomoSettings.php";
 
 wfLoadExtension( 'AbuseFilter', "/www/wwwroot/mw-utils/YsArchives-Extensions/AbuseFilter/extension.json" );
 wfLoadExtension( 'CategoryTree', "/www/wwwroot/mw-utils/YsArchives-Extensions/CategoryTree/extension.json" );
@@ -11,7 +11,7 @@ wfLoadExtension( 'Cite', "/www/wwwroot/mw-utils/YsArchives-Extensions/Cite/exten
 wfLoadExtension( 'CiteThisPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/CiteThisPage/extension.json" );
 wfLoadExtension( 'ConfirmEdit', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/extension.json" );
 wfLoadExtension( 'ConfirmEdit/hCaptcha', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/hCaptcha/extension.json" );
-require_once "$IP/ysarxiv-settings/hCaptchaKeys.php";
+require_once "/www/wwwroot/mw-utils/YsArchives-Settings/hCaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
 $wgCaptchaTriggers['create'] = true;
 $wgCaptchaTriggers['createtalk'] = true;
@@ -181,7 +181,7 @@ $wgPageFormsRedLinksCheckOnlyLocalProps = true;
 
 wfLoadExtension( 'RegexFunctions', "/www/wwwroot/mw-utils/YsArchives-Extensions/RegexFunctions/extension.json" );
 wfLoadExtension( 'Lockdown', "/www/wwwroot/mw-utils/YsArchives-Extensions/Lockdown/extension.json" );
-require_once "$IP/ysarxiv-settings/Lockdowns.php";
+require_once "/www/wwwroot/mw-utils/YsArchives-Settings/Lockdowns.php";
 
 wfLoadExtension( 'UserMerge', "/www/wwwroot/mw-utils/YsArchives-Extensions/UserMerge/extension.json" );
 $wgUserMergeProtectedGroups = [ 'sysop', 'steward' ];
