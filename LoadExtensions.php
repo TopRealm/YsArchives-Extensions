@@ -167,8 +167,8 @@ wfLoadExtension( 'cldr', "/www/wwwroot/mw-utils/YsArchives-Extensions/cldr/exten
 wfLoadExtension( 'OAuth', "/www/wwwroot/mw-utils/YsArchives-Extensions/OAuth/extension.json" );
 // Oauth 秘钥
 $wgMWOAuthSecureTokenTransfer = true;
-$wgOAuth2PrivateKey = __DIR__ . "/oauthkeys/private.key";
-$wgOAuth2PublicKey = __DIR__ . "/oauthkeys/public.key";
+$wgOAuth2PrivateKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/private.key";
+$wgOAuth2PublicKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/public.key";
 
 wfLoadExtension( 'OrphanedTalkPages', "/www/wwwroot/mw-utils/YsArchives-Extensions/OrphanedTalkPages/extension.json" );
 wfLoadExtension( 'NewSignupPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/NewSignupPage/extension.json" );
