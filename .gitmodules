@@ -311,7 +311,7 @@
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-Widgets
 [submodule "SemanticMediaWiki"]
 	path = SemanticMediaWiki
-	url = https://github.com/TopRealm/SemanticMediaWiki
+	url = https://git.qiuwen.net.cn/YSARXIV/SemanticMediaWiki
 	branch = master
 [submodule "TemplateData"]
 	path = TemplateData
