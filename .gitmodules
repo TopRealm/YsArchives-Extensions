@@ -334,10 +334,10 @@
 	url = https://git.qiuwen.net.cn/Qiuwen/mediawiki-extensions-RNRSHook.git
 [submodule "SemanticDrilldown"]
 	path = SemanticDrilldown
-	url = https://github.com/TopRealm/SemanticDrilldown
+	url = https://git.qiuwen.net.cn/YSARXIV/SemanticDrilldown
 [submodule "SemanticResultFormats"]
 	path = SemanticResultFormats
-	url = https://github.com/TopRealm/SemanticResultFormats
+	url = https://git.qiuwen.net.cn/YSARXIV/SemanticResultFormats
 [submodule "ContributionScores"]
 	path = ContributionScores
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-ContributionScores.git
