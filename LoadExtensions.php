@@ -9,7 +9,7 @@ wfLoadExtension( 'AbuseFilter', "/www/wwwroot/mw-utils/YsArchives-Extensions/Abu
 wfLoadExtension( 'CategoryTree', "/www/wwwroot/mw-utils/YsArchives-Extensions/CategoryTree/extension.json" );
 wfLoadExtension( 'Cite', "/www/wwwroot/mw-utils/YsArchives-Extensions/Cite/extension.json" );
 wfLoadExtension( 'CiteThisPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/CiteThisPage/extension.json" );
-wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/hCaptcha', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit" ]);
+wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/hCaptcha', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/extension.json" ]);
 require_once "$IP/ysarxiv-settings/hCaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
 $wgCaptchaTriggers['create'] = true;
