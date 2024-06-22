@@ -56,7 +56,13 @@ $wgVisualEditorDisableForAnons = true;
 $wgVisualEditorSerializationCacheTimeout = 30;
 
 wfLoadExtension( 'WikiEditor' );
+$wgWikiEditorRealtimePreview = true;
+$wgDefaultUserOptions['usebetatoolbar'] = 1; // user option provided by WikiEditor extension
+
 wfLoadExtension( 'Popups' );
+$wgPopupsHideOptInOnPreferencesPage = true;
+$wgPopupsReferencePreviewsBetaFeature = false;
+
 wfLoadExtension( 'FileImporter' );
 wfLoadExtension( 'MassMessage' );
 wfLoadExtension( 'Elastica' );
@@ -114,6 +120,8 @@ $wgDiscussionToolsEnablePermalinksBackend = true;
 
 wfLoadExtension( 'InterwikiExtracts' );
 wfLoadExtension( 'CheckUser' );
+$wgCheckUserEnableSpecialInvestigate = true;
+
 wfLoadExtension( 'SandboxLink' );
 wfLoadExtension( 'TemplateStyles' );
 wfLoadExtension( 'TemplateStylesExtender' );
@@ -122,15 +130,24 @@ wfLoadExtension( 'Citoid' );
 wfLoadExtension( 'LabeledSectionTransclusion' );
 wfLoadExtension( 'RevisionSlider' );
 wfLoadExtension( 'EventLogging' );
+$wgEventLoggingBaseUri = '/beacon/event';
+#$wgEventLoggingServiceUri = '/beacon/intake-analytics';
+$wgEventLoggingStreamNames = true;
+
 wfLoadExtension( 'Scribunto' );
 $wgScribuntoDefaultEngine = 'luasandbox';
 $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
 
 wfLoadExtension( 'Echo' );
+// Echo增强设置
+$wgEchoEmailFooterAddress = '有兽档案馆，开放的有兽焉wiki';
+
 wfLoadExtension( 'MassEditRegex' );
 wfLoadExtension( 'TemplateSandbox' );
 wfLoadExtension( 'TwoColConflict' );
+$wgTwoColConflictUseInline = false;
+
 wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'WikiSEO' );
 # SEO配置
@@ -140,6 +157,8 @@ $wgWikiSeoEnableAutoDescription = true;
 wfLoadExtension( 'UploadWizard' );
 wfLoadExtension( 'Disambiguator' );
 wfLoadExtension( 'WikiLove' );
+$wgWikiLoveGlobal = true;
+
 wfLoadExtension( 'Thanks' );
 wfLoadExtension( 'AJAXPoll' );
 wfLoadExtension( 'LabeledSectionTransclusion' );
@@ -167,11 +186,24 @@ wfLoadExtension( 'UserMerge' );
 $wgUserMergeProtectedGroups = [ 'sysop', 'steward' ];
 
 wfLoadExtension( 'LoginNotify' );
+// 登录告警
+$wgLoginNotifyAttemptsKnownIP = 5;
+$wgLoginNotifyAttemptsNewIP = 3;
+
 wfLoadExtension( 'TabberNeue' );
 $wgTabberNeueEnableAnimation = true;
 
 wfLoadExtension( 'ContributionScores' );
+// 贡献分数
+$wgContribScoreIgnoreBots = true;
+$wgContribScoreIgnoreBlockedUsers = true;
+$wgContribScoreIgnoreUsernames = [];
+$wgContribScoresUseRealName = false;
+
 wfLoadExtension( 'PinyinSort' );
+// 拼音分类
+$wgCategoryCollation = 'pinyin-noprefix';
+
 wfLoadExtension( 'DarkMode' );
 wfLoadExtension( 'CollapsibleSidebar' );
 wfLoadExtension( 'Avatar' );
@@ -181,6 +213,10 @@ $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
 
 wfLoadExtension( 'FileImporter' );
+// FileImporter
+$wgFileImporterShowInputScreen = true;
+$wgFileImporterRequiredRight = 'import';
+
 wfLoadExtension( 'MultiBoilerplate' );
 wfLoadExtension( 'NewUserMessage' );
 wfLoadExtension( 'CreateUserPage' );
