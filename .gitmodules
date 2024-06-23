@@ -4,47 +4,47 @@
 [submodule "AbuseFilter"]
 	path = AbuseFilter
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-AbuseFilter.git
-	branch = REL1_39
+	branch = REL1_42
 [submodule "AdvancedSearch"]
 	path = AdvancedSearch
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-AdvancedSearch
-	branch = REL1_39
+	branch = REL1_42
 [submodule "AntiSpoof"]
 	path = AntiSpoof
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-AntiSpoof-fork
-	branch = master
+	branch = REL1_42
 [submodule "Avatar"]
 	path = Avatar
 	url = https://git.qiuwen.net.cn/YSARXIV/MW-Avatar.git
-	branch = master
+	branch = REL1_42
 [submodule "BetaFeatures"]
 	path = BetaFeatures
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-BetaFeatures
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CategoryTree"]
 	path = CategoryTree
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CategoryTree
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CheckUser"]
 	path = CheckUser
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CheckUser
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Cite"]
 	path = Cite
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Cite
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CiteThisPage"]
 	path = CiteThisPage
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CiteThisPage
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Citoid"]
 	path = Citoid
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Citoid
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CodeMirror"]
 	path = CodeMirror
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CodeMirror
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CollapsibleSidebar"]
 	path = CollapsibleSidebar
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-CollapsibleSidebar
@@ -52,19 +52,19 @@
 [submodule "CommonsMetadata"]
 	path = CommonsMetadata
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-CommonsMetadata
-	branch = REL1_39
+	branch = REL1_42
 [submodule "ConfirmEdit"]
 	path = ConfirmEdit
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ConfirmEdit
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CirrusSearch"]
 	path = CirrusSearch
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CirrusSearch
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CreateUserPage"]
 	path = CreateUserPage
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CreateUserPage
-	branch = REL1_39
+	branch = REL1_42
 [submodule "DarkMode"]
 	path = DarkMode
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-DarkMode
@@ -72,19 +72,19 @@
 [submodule "Disambiguator"]
 	path = Disambiguator
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Disambiguator
-	branch = REL1_39
+	branch = REL1_42
 [submodule "DiscussionTools"]
 	path = DiscussionTools
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-DiscussionTools
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Echo"]
 	path = Echo
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Echo
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Elastica"]
 	path = Elastica
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Elastica
-	branch = REL1_39
+	branch = REL1_42
 [submodule "EmbedVideo"]
 	path = EmbedVideo
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-EmbedVideo
@@ -92,55 +92,55 @@
 [submodule "EventLogging"]
 	path = EventLogging
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-EventLogging
-	branch = REL1_39
+	branch = REL1_42
 [submodule "FileImporter"]
 	path = FileImporter
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-FileImporter
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Gadgets"]
 	path = Gadgets
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-Gadgets
-	branch = REL1_39
+	branch = REL1_42
 [submodule "ImageMap"]
 	path = ImageMap
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ImageMap
-	branch = REL1_39
+	branch = REL1_42
 [submodule "InputBox"]
 	path = InputBox
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-InputBox
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Interwiki"]
 	path = Interwiki
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Interwiki
-	branch = REL1_39
+	branch = REL1_42
 [submodule "InterwikiExtracts"]
 	path = InterwikiExtracts
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-InterwikiExtracts
-	branch = REL1_39
+	branch = REL1_42
 [submodule "LabeledSectionTransclusion"]
 	path = LabeledSectionTransclusion
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-LabeledSectionTransclusion
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Linter"]
 	path = Linter
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Linter
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Lockdown"]
 	path = Lockdown
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Lockdown
-	branch = REL1_39
+	branch = REL1_42
 [submodule "LoginNotify"]
 	path = LoginNotify
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-LoginNotify
-	branch = REL1_39
+	branch = REL1_42
 [submodule "MassEditRegex"]
 	path = MassEditRegex
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MassEditRegex
-	branch = REL1_39
+	branch = REL1_42
 [submodule "MassMessage"]
 	path = MassMessage
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MassMessage
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Matomo"]
 	path = Matomo
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-Matomo
@@ -148,35 +148,35 @@
 [submodule "MediaSearch"]
 	path = MediaSearch
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MediaSearch
-	branch = REL1_39
+	branch = REL1_42
 [submodule "MultiBoilerplate"]
 	path = MultiBoilerplate
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-MultiBoilerplate
-	branch = REL1_39
+	branch = REL1_42
 [submodule "MultimediaViewer"]
 	path = MultimediaViewer
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MultimediaViewer
-	branch = REL1_39
+	branch = REL1_42
 [submodule "NewSignupPage"]
 	path = NewSignupPage
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-NewSignupPage
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Nuke"]
 	path = Nuke
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Nuke
-	branch = REL1_39
+	branch = REL1_42
 [submodule "OATHAuth"]
 	path = OATHAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-OATHAuth
-	branch = REL1_39
+	branch = REL1_42
 [submodule "OAuth"]
 	path = OAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-OAuth
-	branch = REL1_39
+	branch = REL1_42
 [submodule "OrphanedTalkPages"]
 	path = OrphanedTalkPages
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-OrphanedTalkPages
-	branch = REL1_39
+	branch = REL1_42
 [submodule "PageForms"]
 	path = PageForms
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-PageForms
@@ -184,15 +184,15 @@
 [submodule "PageImages"]
 	path = PageImages
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-PageImages
-	branch = REL1_39
+	branch = REL1_42
 [submodule "ParserFunctions"]
 	path = ParserFunctions
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ParserFunctions
-	branch = REL1_39
+	branch = REL1_42
 [submodule "PdfHandler"]
 	path = PdfHandler
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-PdfHandler
-	branch = REL1_39
+	branch = REL1_42
 [submodule "PinyinSort"]
 	path = PinyinSort
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-PinyinSort
@@ -200,51 +200,51 @@
 [submodule "Poem"]
 	path = Poem
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Poem
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Popups"]
 	path = Popups
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Popups
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Renameuser"]
 	path = Renameuser
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Renameuser
-	branch = REL1_39
+	branch = REL1_42
 [submodule "ReplaceText"]
 	path = ReplaceText
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ReplaceText
-	branch = REL1_39
+	branch = REL1_42
 [submodule "SecureLinkFixer"]
 	path = SecureLinkFixer
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-SecureLinkFixer
-	branch = REL1_39
+	branch = REL1_42
 [submodule "SyntaxHighlight_GeSHi"]
 	path = SyntaxHighlight_GeSHi
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-SyntaxHighlight_GeSHi
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TemplateSandbox"]
 	path = TemplateSandbox
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TemplateSandbox
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TemplateStyles"]
 	path = TemplateStyles
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TemplateStyles
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TemplateWizard"]
 	path = TemplateWizard
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TemplateWizard
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TextExtracts"]
 	path = TextExtracts
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TextExtracts
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Thanks"]
 	path = Thanks
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Thanks
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TwoColConflict"]
 	path = TwoColConflict
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TwoColConflict
-	branch = REL1_39
+	branch = REL1_42
 [submodule "UploadWizard"]
 	path = UploadWizard
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-UploadWizard
@@ -252,15 +252,15 @@
 [submodule "UserMerge"]
 	path = UserMerge
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-UserMerge
-	branch = REL1_39
+	branch = REL1_42
 [submodule "WikiEditor"]
 	path = WikiEditor
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-WikiEditor
-	branch = REL1_39
+	branch = REL1_42
 [submodule "WikiLove"]
 	path = WikiLove
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-WikiLove
-	branch = REL1_39
+	branch = REL1_42
 [submodule "WikiSEO"]
 	path = WikiSEO
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-WikiSEO
@@ -275,34 +275,34 @@
 [submodule "NewUserMessage"]
 	path = NewUserMessage
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-NewUserMessage
-	branch = REL1_39
+	branch = REL1_42
 [submodule "SpamBlacklist"]
 	path = SpamBlacklist
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-SpamBlacklist
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TitleBlacklist"]
 	path = TitleBlacklist
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TitleBlacklist
-	branch = REL1_39
+	branch = REL1_42
 [submodule "CodeEditor"]
 	path = CodeEditor
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CodeEditor
-	branch = REL1_39
+	branch = REL1_42
 [submodule "SandboxLink"]
 	path = SandboxLink
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-SandboxLink
-	branch = REL1_39
+	branch = REL1_42
 [submodule "TemplateStylesExtender"]
 	path = TemplateStylesExtender
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-TemplateStylesExtender
 [submodule "RevisionSlider"]
 	path = RevisionSlider
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-RevisionSlider
-	branch = REL1_39
+	branch = REL1_42
 [submodule "Scribunto"]
 	path = Scribunto
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Scribunto
-	branch = REL1_39
+	branch = REL1_42
 [submodule "RegexFunctions"]
 	path = RegexFunctions
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-RegexFunctions
@@ -316,10 +316,11 @@
 [submodule "TemplateData"]
 	path = TemplateData
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TemplateData.git
-	branch = REL1_39
+	branch = REL1_42
 [submodule "VisualEditor"]
 	path = VisualEditor
 	url = https://git.qiuwen.net.cn/YSARXIV/VisualEditor
+	branch = REL1_42
 [submodule "TabberNeue"]
 	path = TabberNeue
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-TabberNeue
@@ -344,4 +345,4 @@
 [submodule "FeaturedFeeds"]
 	path = FeaturedFeeds
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-FeaturedFeeds.git
-	branch = REL1_39
+	branch = REL1_42

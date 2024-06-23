@@ -31,6 +31,16 @@ for /f "tokens=2" %%i in ('git submodule') do (
     popd
 )
 
+REM Check if .gitmodules has been changed
+git status | findstr ".gitmodules"
+if errorlevel 1 (
+    echo .gitmodules is unchanged.
+) else (
+    echo .gitmodules has changed, committing changes...
+    git add .gitmodules
+    git commit -m "Updated .gitmodules file after submodule branch changes."
+)
+
 echo.
 echo Update process completed.
 
