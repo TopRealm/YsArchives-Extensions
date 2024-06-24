@@ -345,3 +345,7 @@
 	path = FeaturedFeeds
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-FeaturedFeeds.git
 	branch = REL1_39
+[submodule "ArticleCreationWorkflow"]
+	path = ArticleCreationWorkflow
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ArticleCreationWorkflow.git
+	branch = REL1_39
