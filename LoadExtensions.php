@@ -193,6 +193,7 @@ $wgLoginNotifyAttemptsNewIP = 3;
 
 wfLoadExtension( 'TabberNeue', "/www/wwwroot/mw-utils/YsArchives-Extensions/TabberNeue/extension.json" );
 $wgTabberNeueEnableAnimation = true;
+$wgTabberNeueUpdateLocationOnTabChange = true;
 
 wfLoadExtension( 'ContributionScores', "/www/wwwroot/mw-utils/YsArchives-Extensions/ContributionScores/extension.json" );
 // 贡献分数
