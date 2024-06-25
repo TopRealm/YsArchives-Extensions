@@ -276,3 +276,4 @@ require_once('/www/wwwroot/mw-utils/YsArchives-Extensions/NewUserMessage/include
 wfLoadExtension( 'HeaderTabs', "/www/wwwroot/mw-utils/YsArchives-Extensions/HeaderTabs/extension.json" );
 
 wfLoadExtension( 'ArticleCreationWorkflow', "/www/wwwroot/mw-utils/YsArchives-Extensions/ArticleCreationWorkflow/extension.json" );
+$wgArticleCreationLandingPage = 'LIB:条目创建向导';
