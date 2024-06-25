@@ -274,3 +274,5 @@ $smwgMaintenanceLanguage = 'zh';
 require_once('/www/wwwroot/mw-utils/YsArchives-Extensions/NewUserMessage/includes/NewUserMessage.php');
 
 wfLoadExtension( 'HeaderTabs', "/www/wwwroot/mw-utils/YsArchives-Extensions/HeaderTabs/extension.json" );
+
+wfLoadExtension( 'ArticleCreationWorkflow', "/www/wwwroot/mw-utils/YsArchives-Extensions/ArticleCreationWorkflow/extension.json" );
