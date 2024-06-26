@@ -52,7 +52,7 @@
 [submodule "CommonsMetadata"]
 	path = CommonsMetadata
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-CommonsMetadata
-	branch = REL1_42
+	branch = master
 [submodule "ConfirmEdit"]
 	path = ConfirmEdit
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ConfirmEdit
