@@ -90,11 +90,30 @@ wfLoadExtension( 'CodeMirror', "/www/wwwroot/mw-utils/YsArchives-Extensions/Code
 wfLoadExtension( 'ParserFunctions', "/www/wwwroot/mw-utils/YsArchives-Extensions/ParserFunctions/extension.json" );
 wfLoadExtension( 'CodeEditor', "/www/wwwroot/mw-utils/YsArchives-Extensions/CodeEditor/extension.json" );
 wfLoadExtension( 'Linter', "/www/wwwroot/mw-utils/YsArchives-Extensions/Linter/extension.json" );
+# 为了使linter工作，使Parsoid作为扩展加载，添加接入点
+wfLoadExtension( 'Parsoid', "$IP/vendor/wikimedia/parsoid/extension.json" );
 $wgParsoidSettings = [
-	'useSelser' => true,
+    'useSelser' => true,
     'linting' => true,
 ];
 $wgVisualEditorParsoidAutoConfig = false; #(for Linter, to make work)
+$wgVirtualRestConfig = [
+	'paths' => [],
+	'modules' => [
+		'parsoid' => [
+			'url' => 'https://youshou.wiki/rest.php',
+			'domain' => 'youshou.wiki',
+			'forwardCookies' => true,
+			'restbaseCompat' => false,
+			'timeout' => 30,
+		],
+	],
+	'global' => [
+		'timeout' => 360,
+		'forwardCookies' => false,
+		'HTTPProxy' => null,
+	],
+];
 
 wfLoadExtension( 'DiscussionTools', "/www/wwwroot/mw-utils/YsArchives-Extensions/DiscussionTools/extension.json" );
 $wgDiscussionToolsEnable = true;
