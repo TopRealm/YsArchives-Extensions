@@ -263,10 +263,10 @@ wfLoadExtension( 'SemanticDrilldown', "/www/wwwroot/mw-utils/YsArchives-Extensio
 wfLoadExtension( 'SemanticResultFormats', "/www/wwwroot/mw-utils/YsArchives-Extensions/SemanticResultFormats/extension.json" );
 // $smwgEnabledFulltextSearch = true;
 # 语义维基调优
-$smwgQMaxLimit = 1000;
+$smwgQMaxLimit = 5000;
 $smwgQEqualitySupport = SMW_EQ_NONE;
 $smwgQueryResultCacheType = CACHE_MEMCACHED;
-$smwgQMaxSize = 9;
+$smwgQMaxSize = 10;
 $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = false;
 $smwgMaintenanceLanguage = 'zh';
 
