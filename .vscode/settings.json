@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "TemplateStylesExtender",
         "WebAuthn",
-        "vscode-settings"
+        "vscode-settings",
+        "submodules"
     ]
 }
