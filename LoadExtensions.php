@@ -26,6 +26,7 @@ wfLoadExtension( 'Interwiki', "/www/wwwroot/mw-utils/YsArchives-Extensions/Inter
 wfLoadExtension( 'MultimediaViewer', "/www/wwwroot/mw-utils/YsArchives-Extensions/MultimediaViewer/extension.json" );
 wfLoadExtension( 'Nuke', "/www/wwwroot/mw-utils/YsArchives-Extensions/Nuke/extension.json" );
 wfLoadExtension( 'OATHAuth', "/www/wwwroot/mw-utils/YsArchives-Extensions/OATHAuth/extension.json" );
+wfLoadExtension( 'WebAuthn', "/www/wwwroot/mw-utils/YsArchives-Extensions/WebAuthn/extension.json" );
 wfLoadExtension( 'PageImages', "/www/wwwroot/mw-utils/YsArchives-Extensions/PageImages/extension.json" );
 $wgPageImagesExpandOpenSearchXml = true;
 
