@@ -353,3 +353,7 @@
 [submodule "HeaderTabs"]
 	path = HeaderTabs
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-HeaderTabs.git
+[submodule "WebAuthn"]
+	path = WebAuthn
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-WebAuthn.git
+	branch = REL1_39
