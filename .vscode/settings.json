@@ -4,6 +4,7 @@
         "WebAuthn",
         "vscode-settings",
         "submodules",
-        "HeaderTabs"
+        "HeaderTabs",
+        "LoadExtensions.php"
     ]
 }

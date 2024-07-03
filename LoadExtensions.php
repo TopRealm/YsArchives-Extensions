@@ -34,6 +34,10 @@ wfLoadExtension( 'ParserFunctions', "/www/wwwroot/mw-utils/YsArchives-Extensions
 wfLoadExtension( 'PdfHandler', "/www/wwwroot/mw-utils/YsArchives-Extensions/PdfHandler/extension.json" );
 wfLoadExtension( 'Poem', "/www/wwwroot/mw-utils/YsArchives-Extensions/Poem/extension.json" );
 wfLoadExtension( 'Renameuser', "/www/wwwroot/mw-utils/YsArchives-Extensions/Renameuser/extension.json" );
+$wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
+    unset( $wgGroupPermissions['bureaucrat'] );
+};
+
 wfLoadExtension( 'ReplaceText', "/www/wwwroot/mw-utils/YsArchives-Extensions/ReplaceText/extension.json" );
 wfLoadExtension( 'SecureLinkFixer', "/www/wwwroot/mw-utils/YsArchives-Extensions/SecureLinkFixer/extension.json" );
 wfLoadExtension( 'SpamBlacklist', "/www/wwwroot/mw-utils/YsArchives-Extensions/SpamBlacklist/extension.json" );
@@ -174,6 +178,10 @@ $wgOAuth2PublicKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/public.key";
 wfLoadExtension( 'OrphanedTalkPages', "/www/wwwroot/mw-utils/YsArchives-Extensions/OrphanedTalkPages/extension.json" );
 wfLoadExtension( 'NewSignupPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/NewSignupPage/extension.json" );
 wfLoadExtension( 'AntiSpoof', "/www/wwwroot/mw-utils/YsArchives-Extensions/AntiSpoof/extension.json" );
+$wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
+    unset( $wgGroupPermissions['bureaucrat'] );
+};
+
 wfLoadExtension( 'CommonsMetadata', "/www/wwwroot/mw-utils/YsArchives-Extensions/CommonsMetadata/extension.json" );
 wfLoadExtension( 'PageForms', "/www/wwwroot/mw-utils/YsArchives-Extensions/PageForms/extension.json" );
 # Page Forms 设置
