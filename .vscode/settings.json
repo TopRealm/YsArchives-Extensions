@@ -3,6 +3,7 @@
         "TemplateStylesExtender",
         "WebAuthn",
         "vscode-settings",
-        "submodules"
+        "submodules",
+        "HeaderTabs"
     ]
 }
