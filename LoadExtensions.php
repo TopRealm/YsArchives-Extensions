@@ -10,7 +10,7 @@ wfLoadExtension( 'CategoryTree', "/www/wwwroot/mw-utils/YsArchives-Extensions/Ca
 wfLoadExtension( 'Cite', "/www/wwwroot/mw-utils/YsArchives-Extensions/Cite/extension.json" );
 wfLoadExtension( 'CiteThisPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/CiteThisPage/extension.json" );
 wfLoadExtension( 'ConfirmEdit', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/extension.json" );
-wfLoadExtension( 'ConfirmEdit/hCaptcha', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/hCaptcha/extension.json" );
+wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/QuestyCaptcha/extension.json" );
 require_once "/www/wwwroot/mw-utils/YsArchives-Settings/hCaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
 $wgCaptchaTriggers['create'] = true;
