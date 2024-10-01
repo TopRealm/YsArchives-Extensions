@@ -278,3 +278,5 @@ wfLoadExtension( 'HeaderTabs', "/www/wwwroot/mw-utils/YsArchives-Extensions/Head
 
 wfLoadExtension( 'ArticleCreationWorkflow', "/www/wwwroot/mw-utils/YsArchives-Extensions/ArticleCreationWorkflow/extension.json" );
 $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导';
+
+wfLoadExtension( 'UploadsLink', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadsLink/extension.json" );

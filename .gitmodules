@@ -357,3 +357,7 @@
 	path = WebAuthn
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-WebAuthn.git
 	branch = REL1_39
+[submodule "UploadsLink"]
+	path = UploadsLink
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-UploadsLink
+	branch = REL1_39
