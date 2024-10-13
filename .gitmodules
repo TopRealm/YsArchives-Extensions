@@ -361,7 +361,3 @@
 	path = UploadsLink
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-UploadsLink
 	branch = REL1_39
-[submodule "SearchVue"]
-	path = SearchVue
-	url = https://github.com/wikimedia/mediawiki-extensions-SearchVue
-	branch = REL1_39
