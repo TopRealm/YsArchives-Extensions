@@ -74,10 +74,6 @@
 	path = Disambiguator
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Disambiguator
 	branch = REL1_41
-[submodule "DiscussionTools"]
-	path = DiscussionTools
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-DiscussionTools
-	branch = REL1_41
 [submodule "Echo"]
 	path = Echo
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Echo
