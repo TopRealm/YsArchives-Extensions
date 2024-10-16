@@ -284,6 +284,7 @@ $wgDiscussionToolsEnable = true;
 $wgDiscussionToolsEnablePermalinksBackend = true;
 
 wfLoadExtension( 'TimedMediaHandler', "/www/wwwroot/mw-utils/YsArchives-Extensions/TimedMediaHandler/extension.json" );
+$wgFFmpegLocation = '/usr/bin/ffmpeg';
 $wgMinimumVideoPlayerSize = 200;
 $wgEnableTranscode = true;
 $wgJobTypesExcludedFromDefaultQueue[] = 'webVideoTranscode';
