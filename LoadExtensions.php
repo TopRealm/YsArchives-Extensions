@@ -279,6 +279,6 @@ $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导';
 
 wfLoadExtension( 'UploadsLink', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadsLink/extension.json" );
 
-#wfLoadExtension( 'DiscussionTools', "/www/wwwroot/mw-utils/YsArchives-Extensions/DiscussionTools/extension.json" );
-#$wgDiscussionToolsEnable = true;
-#$wgDiscussionToolsEnablePermalinksBackend = true;
+wfLoadExtension( 'DiscussionTools', "/www/wwwroot/mw-utils/YsArchives-Extensions/DiscussionTools/extension.json" );
+$wgDiscussionToolsEnable = true;
+$wgDiscussionToolsEnablePermalinksBackend = true;
