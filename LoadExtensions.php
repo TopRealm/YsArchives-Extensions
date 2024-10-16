@@ -6,6 +6,8 @@ wfLoadExtension( 'Matomo', "/www/wwwroot/mw-utils/YsArchives-Extensions/Matomo/e
 require_once "/www/wwwroot/mw-utils/YsArchives-Settings/MatomoSettings.php";
 
 wfLoadExtension( 'AbuseFilter', "/www/wwwroot/mw-utils/YsArchives-Extensions/AbuseFilter/extension.json" );
+$wgAbuseFilterEnableBlockedExternalDomain = true;
+
 wfLoadExtension( 'CategoryTree', "/www/wwwroot/mw-utils/YsArchives-Extensions/CategoryTree/extension.json" );
 wfLoadExtension( 'Cite', "/www/wwwroot/mw-utils/YsArchives-Extensions/Cite/extension.json" );
 wfLoadExtension( 'CiteThisPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/CiteThisPage/extension.json" );
