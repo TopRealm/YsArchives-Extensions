@@ -365,3 +365,7 @@
 	path = DiscussionTools
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-DiscussionTools.git
 	branch = REL1_41
+[submodule "TimedMediaHandler"]
+	path = TimedMediaHandler
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TimedMediaHandler.git
+	branch = REL1_41
