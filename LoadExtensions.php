@@ -148,7 +148,7 @@ wfLoadExtension( 'TemplateSandbox', "/www/wwwroot/mw-utils/YsArchives-Extensions
 wfLoadExtension( 'TwoColConflict', "/www/wwwroot/mw-utils/YsArchives-Extensions/TwoColConflict/extension.json" );
 $wgTwoColConflictUseInline = false;
 
-wfLoadExtension( 'EmbedVideo', "/www/wwwroot/mw-utils/YsArchives-Extensions/EmbedVideo/extension.json" );
+#wfLoadExtension( 'EmbedVideo', "/www/wwwroot/mw-utils/YsArchives-Extensions/EmbedVideo/extension.json" );
 wfLoadExtension( 'WikiSEO', "/www/wwwroot/mw-utils/YsArchives-Extensions/WikiSEO/extension.json" );
 # SEO配置
 #$wgWikiSeoDefaultLanguage = 'zh';
