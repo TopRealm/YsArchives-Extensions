@@ -275,7 +275,7 @@ require_once('/www/wwwroot/mw-utils/YsArchives-Extensions/NewUserMessage/include
 wfLoadExtension( 'HeaderTabs', "/www/wwwroot/mw-utils/YsArchives-Extensions/HeaderTabs/extension.json" );
 
 wfLoadExtension( 'ArticleCreationWorkflow', "/www/wwwroot/mw-utils/YsArchives-Extensions/ArticleCreationWorkflow/extension.json" );
-$wgArticleCreationLandingPage = '有兽档案馆:条目创建向导';
+$wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
 
 wfLoadExtension( 'UploadsLink', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadsLink/extension.json" );
 
