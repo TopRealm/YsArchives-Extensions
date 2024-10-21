@@ -320,3 +320,4 @@ $wgTmhEnableMp4Uploads = true;
 // If you use ffmpeg 2, it can be set to true
 $wgUseFFmpeg2 = false;
 
+wfLoadExtension( 'CleanChanges', "/www/wwwroot/mw-utils/YsArchives-Extensions/CleanChanges/extension.json" );
