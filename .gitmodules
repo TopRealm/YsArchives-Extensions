@@ -369,7 +369,3 @@
 	path = TimedMediaHandler
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TimedMediaHandler.git
 	branch = REL1_41
-[submodule "CleanChanges"]
-	path = CleanChanges
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CleanChanges
-	branch = REL1_41
