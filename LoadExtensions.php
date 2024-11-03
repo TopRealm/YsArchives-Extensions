@@ -207,6 +207,7 @@ $wgCategoryCollation = 'pinyin-noprefix';
 
 wfLoadExtension( 'DarkMode', "/www/wwwroot/mw-utils/YsArchives-Extensions/DarkMode/extension.json" );
 wfLoadExtension( 'CollapsibleSidebar', "/www/wwwroot/mw-utils/YsArchives-Extensions/CollapsibleSidebar/extension.json" );
+
 wfLoadExtension( 'Avatar', "/www/wwwroot/mw-utils/YsArchives-Extensions/Avatar/extension.json" );
 //Avatar插件配置
 $wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
@@ -319,5 +320,3 @@ $wgTmhEnableMp4Uploads = true;
 
 // If you use ffmpeg 2, it can be set to true
 $wgUseFFmpeg2 = false;
-
-wfLoadExtension( 'UserProfileV2', "/www/wwwroot/mw-utils/YsArchives-Extensions/UserProfileV2/extension.json" );
