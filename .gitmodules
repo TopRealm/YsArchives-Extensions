@@ -369,6 +369,3 @@
 	path = TimedMediaHandler
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TimedMediaHandler.git
 	branch = REL1_41
-[submodule "SocialProfile"]
-	path = SocialProfile
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-SocialProfile.git
