@@ -320,3 +320,5 @@ $wgTmhEnableMp4Uploads = true;
 
 // If you use ffmpeg 2, it can be set to true
 $wgUseFFmpeg2 = false;
+
+require_once "$IP/extensions/SocialProfile/SocialProfile.php";
