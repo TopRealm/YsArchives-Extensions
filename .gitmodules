@@ -369,3 +369,6 @@
 	path = TimedMediaHandler
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TimedMediaHandler.git
 	branch = REL1_41
+[submodule "DynamicPageList3"]
+	path = DynamicPageList3
+	url = https://git.qiuwen.net.cn/Mirror/DynamicPageList3.git
