@@ -197,7 +197,7 @@ $wgTabberNeueUpdateLocationOnTabChange = true;
 wfLoadExtension( 'ContributionScores', "/www/wwwroot/mw-utils/YsArchives-Extensions/ContributionScores/extension.json" );
 // 贡献分数
 $wgContribScoreIgnoreBots = true;
-$wgContribScoreIgnoreBlockedUsers = true;
+$wgContribScoreIgnoreBlockedUsers = false;
 $wgContribScoreIgnoreUsernames = [];
 $wgContribScoresUseRealName = false;
 
