@@ -372,3 +372,7 @@
 [submodule "DynamicPageList3"]
 	path = DynamicPageList3
 	url = https://git.qiuwen.net.cn/Mirror/DynamicPageList3.git
+[submodule "CentralAuth"]
+	path = CentralAuth
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CentralAuth
+	branch = REL1_41
