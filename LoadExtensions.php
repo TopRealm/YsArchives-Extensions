@@ -156,9 +156,129 @@ $wgWikiSeoEnableAutoDescription = true;
 
 wfLoadExtension( 'UploadWizard', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadWizard/extension.json" );
 
-wfLoadExtension( 'UploadWizard', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadWizard/extension.json" );
+$wgUploadWizardConfig = [
+    'licensing' => [
+        // Default license type.
+        // Possible values: ownwork, thirdparty, choice.
+        'defaultType' => 'choice',
 
-wfLoadExtension( 'UploadWizard', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadWizard/extension.json" );
+        // Should the own work option be shown, and if not, what option should be set?
+        // Possible values:  own, notown, choice.
+        'ownWorkDefault' => 'own',
+
+        // radio button selection of some licenses
+        'ownWork' => [
+            'type' => 'or',
+            'template' => 'licensing', // this adds a link to Template:Licensing to the file info page
+            'licenses' => [
+                'cc-by-nc-sa-4.0',
+                'cc-by-nc-sa-3.0',
+                'cc-by-nc-sa-3.0-cn',
+                'cc-by-nc-nd-4.0',
+                'cc-by-nc-nd-3.0',
+                'cc-by-nc-nd-3.0-cn',
+                'cc-by-nc-4.0',
+                'cc-by-nc-3.0',
+                'cc-by-nc-3.0-cn',
+                'cc-by-sa-4.0',
+                'cc-zero',
+                'generic',
+            ]
+        ],
+
+        // checkbox selection of all licenses
+        'thirdParty' => [
+            'type' => 'or',
+            'licenseGroups' => [
+                [
+                    'head' => 'mwe-upwiz-license-cc-head',
+                    'subhead' => 'mwe-upwiz-license-cc-subhead',
+                    'licenses' => [
+                        'cc-by-sa-4.0',
+                        'cc-by-sa-3.0',
+                        'cc-by-sa-3.0-cn',
+                        'cc-by-sa-2.5',
+                        'cc-by-sa-2.5-cn',
+                        'cc-by-sa-2.0',
+                        'cc-by-4.0',
+                        'cc-by-3.0',
+                        'cc-by-3.0-cn',
+                        'cc-by-2.5',
+                        'cc-by-2.5-cn',
+                        'cc-by-2.0',
+                        'cc-zero',
+                        'cc-by-nc-sa-4.0',
+                        'cc-by-nc-sa-3.0',
+                        'cc-by-nc-sa-3.0-cn',
+                        'cc-by-nc-nd-4.0',
+                        'cc-by-nc-nd-3.0',
+                        'cc-by-nc-nd-3.0-cn',
+                    ]
+                ],
+                [
+                    'head' => 'mwe-upwiz-license-other-free-head',
+                    'subhead' => 'mwe-upwiz-license-other-free-subhead',
+                    'licenses' => [
+                        'fal',
+                        'gplv3',
+                        'gplv2-or-later-version',
+                        'gplv2',
+                        'lgplv3',
+                        'lgplv2.1',
+                        'lgplv2.1-or-later-version',
+                        'lgplv2',
+                        'gfdl',
+                        'gfdl+cc-by-sa-3.0',
+                        'odbl',
+                        'attribution',
+                        'copyrighted-free-use',
+                    ]
+                ],
+                [
+                    'head' => 'mwe-upwiz-license-public-domain-head',
+                    'subhead' => 'mwe-upwiz-license-public-domain-subhead',
+                    'licenses' => [
+                        'pd-us',
+                        'pd-prc-1992',
+                        'pd-prc-foreign',
+                        'pd-prc',
+                        'pd-textlogo',
+                        'pd-ineligible',
+                    ]
+                ],
+                [
+                    'head' => 'mwe-upwiz-license-cngov-head',
+                    'licenses' => [
+                        'pd-prc-exempt',
+                        'prc-standardmap',
+                        'hongkong-factsheets',
+                        'pd-macau-gov'
+                    ]
+                ],
+                [
+                    'head' => 'mwe-upwiz-license-non-free-head',
+                    'subhead' => 'mwe-upwiz-license-non-free-subhead',
+                    'licenses' => [
+                        'non-free-mark',
+                        'non-free-cover',
+                        'non-free-art',
+                        'non-free-poster',
+                        'non-free-portrait',
+                        'non-free-screenshot',
+                        'non-free-record',
+                        'non-free-page',
+                    ]
+                ],
+                [
+                    'head' => 'mwe-upwiz-license-other-head',
+                    'special' => 'custom',
+                    'defaults' => [ 'custom' ],
+                    'licenses' => [ 'custom' ],
+                ],
+            ]
+        ]
+    ]
+];
 
 wfLoadExtension( 'Disambiguator', "/www/wwwroot/mw-utils/YsArchives-Extensions/Disambiguator/extension.json" );
 wfLoadExtension( 'WikiLove', "/www/wwwroot/mw-utils/YsArchives-Extensions/WikiLove/extension.json" );
