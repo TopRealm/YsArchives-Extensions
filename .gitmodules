@@ -245,7 +245,7 @@
 [submodule "UploadWizard"]
 	path = UploadWizard
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-UploadWizard
-	branch = master
+	branch = RELEASE1_43
 [submodule "UserMerge"]
 	path = UserMerge
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-UserMerge
