@@ -265,7 +265,7 @@ wfLoadExtension( 'SemanticResultFormats', "/www/wwwroot/mw-utils/YsArchives-Exte
 # 语义维基调优
 $smwgQMaxLimit = 5000;
 $smwgQEqualitySupport = SMW_EQ_NONE;
-$smwgQueryResultCacheType = CACHE_ACCEL;
+$smwgQueryResultCacheType = CACHE_ANYTHING;;
 $smwgQMaxSize = 10;
 $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = false;
 $smwgMaintenanceLanguage = 'zh';
