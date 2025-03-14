@@ -322,3 +322,4 @@ $wgTmhEnableMp4Uploads = true;
 $wgUseFFmpeg2 = false;
 
 wfLoadExtension( 'DynamicPageList3', "/www/wwwroot/mw-utils/YsArchives-Extensions/DynamicPageList3/extension.json" );
+wfLoadExtension( 'ImgTagSupport', "/www/wwwroot/mw-utils/YsArchives-Extensions/ImgTagSupport/extension.json" );
