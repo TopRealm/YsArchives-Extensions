@@ -377,3 +377,6 @@
 	path = CentralAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CentralAuth
 	branch = REL1_43
+[submodule "EnableImgTag"]
+	path = EnableImgTag
+	url = https://git.qiuwen.net.cn/YSARXIV/EnableImgTag
