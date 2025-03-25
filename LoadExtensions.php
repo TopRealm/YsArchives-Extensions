@@ -1,19 +1,23 @@
 <?php
-# 扩展
-wfLoadExtension( 'Gadgets', "/www/wwwroot/mw-utils/YsArchives-Extensions/Gadgets/extension.json" );
-wfLoadExtension( 'Matomo', "/www/wwwroot/mw-utils/YsArchives-Extensions/Matomo/extension.json" );
-// Matomo访问信息收集
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/MatomoSettings.php";
+# 定义基础路径
+$ysyExtensionsPath = "/www/wwwroot/mw-utils/YsArchives-Extensions";
+$ysySettingsPath = "/www/wwwroot/mw-utils/YsArchives-Settings";
 
-wfLoadExtension( 'AbuseFilter', "/www/wwwroot/mw-utils/YsArchives-Extensions/AbuseFilter/extension.json" );
+# 扩展
+wfLoadExtension( 'Gadgets', "$ysyExtensionsPath/Gadgets/extension.json" );
+wfLoadExtension( 'Matomo', "$ysyExtensionsPath/Matomo/extension.json" );
+// Matomo访问信息收集
+require_once "$ysySettingsPath/MatomoSettings.php";
+
+wfLoadExtension( 'AbuseFilter', "$ysyExtensionsPath/AbuseFilter/extension.json" );
 $wgAbuseFilterEnableBlockedExternalDomain = true;
 
-wfLoadExtension( 'CategoryTree', "/www/wwwroot/mw-utils/YsArchives-Extensions/CategoryTree/extension.json" );
-wfLoadExtension( 'Cite', "/www/wwwroot/mw-utils/YsArchives-Extensions/Cite/extension.json" );
-wfLoadExtension( 'CiteThisPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/CiteThisPage/extension.json" );
-wfLoadExtension( 'ConfirmEdit', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/extension.json" );
-wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "/www/wwwroot/mw-utils/YsArchives-Extensions/ConfirmEdit/QuestyCaptcha/extension.json" );
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/hCaptchaKeys.php";
+wfLoadExtension( 'CategoryTree', "$ysyExtensionsPath/CategoryTree/extension.json" );
+wfLoadExtension( 'Cite', "$ysyExtensionsPath/Cite/extension.json" );
+wfLoadExtension( 'CiteThisPage', "$ysyExtensionsPath/CiteThisPage/extension.json" );
+wfLoadExtension( 'ConfirmEdit', "$ysyExtensionsPath/ConfirmEdit/extension.json" );
+wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "$ysyExtensionsPath/ConfirmEdit/QuestyCaptcha/extension.json" );
+require_once "$ysySettingsPath/hCaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
 $wgCaptchaTriggers['create'] = true;
 $wgCaptchaTriggers['createtalk'] = true;
@@ -21,28 +25,28 @@ $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
 
-wfLoadExtension( 'BetaFeatures', "/www/wwwroot/mw-utils/YsArchives-Extensions/BetaFeatures/extension.json" );
-wfLoadExtension( 'ImageMap', "/www/wwwroot/mw-utils/YsArchives-Extensions/ImageMap/extension.json" );
-wfLoadExtension( 'InputBox', "/www/wwwroot/mw-utils/YsArchives-Extensions/InputBox/extension.json" );
-wfLoadExtension( 'Interwiki', "/www/wwwroot/mw-utils/YsArchives-Extensions/Interwiki/extension.json" );
-wfLoadExtension( 'MultimediaViewer', "/www/wwwroot/mw-utils/YsArchives-Extensions/MultimediaViewer/extension.json" );
-wfLoadExtension( 'Nuke', "/www/wwwroot/mw-utils/YsArchives-Extensions/Nuke/extension.json" );
-wfLoadExtension( 'OATHAuth', "/www/wwwroot/mw-utils/YsArchives-Extensions/OATHAuth/extension.json" );
-wfLoadExtension( 'WebAuthn', "/www/wwwroot/mw-utils/YsArchives-Extensions/WebAuthn/extension.json" );
-wfLoadExtension( 'PageImages', "/www/wwwroot/mw-utils/YsArchives-Extensions/PageImages/extension.json" );
+wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json" );
+wfLoadExtension( 'ImageMap', "$ysyExtensionsPath/ImageMap/extension.json" );
+wfLoadExtension( 'InputBox', "$ysyExtensionsPath/InputBox/extension.json" );
+wfLoadExtension( 'Interwiki', "$ysyExtensionsPath/Interwiki/extension.json" );
+wfLoadExtension( 'MultimediaViewer', "$ysyExtensionsPath/MultimediaViewer/extension.json" );
+wfLoadExtension( 'Nuke', "$ysyExtensionsPath/Nuke/extension.json" );
+wfLoadExtension( 'OATHAuth', "$ysyExtensionsPath/OATHAuth/extension.json" );
+wfLoadExtension( 'WebAuthn', "$ysyExtensionsPath/WebAuthn/extension.json" );
+wfLoadExtension( 'PageImages', "$ysyExtensionsPath/PageImages/extension.json" );
 $wgPageImagesExpandOpenSearchXml = true;
 
-wfLoadExtension( 'ParserFunctions', "/www/wwwroot/mw-utils/YsArchives-Extensions/ParserFunctions/extension.json" );
-wfLoadExtension( 'PdfHandler', "/www/wwwroot/mw-utils/YsArchives-Extensions/PdfHandler/extension.json" );
-wfLoadExtension( 'Poem', "/www/wwwroot/mw-utils/YsArchives-Extensions/Poem/extension.json" );
-wfLoadExtension( 'Renameuser', "/www/wwwroot/mw-utils/YsArchives-Extensions/Renameuser/extension.json" );
-wfLoadExtension( 'ReplaceText', "/www/wwwroot/mw-utils/YsArchives-Extensions/ReplaceText/extension.json" );
-wfLoadExtension( 'SecureLinkFixer', "/www/wwwroot/mw-utils/YsArchives-Extensions/SecureLinkFixer/extension.json" );
-wfLoadExtension( 'SpamBlacklist', "/www/wwwroot/mw-utils/YsArchives-Extensions/SpamBlacklist/extension.json" );
-wfLoadExtension( 'TemplateData', "/www/wwwroot/mw-utils/YsArchives-Extensions/TemplateData/extension.json" );
-wfLoadExtension( 'TextExtracts', "/www/wwwroot/mw-utils/YsArchives-Extensions/TextExtracts/extension.json" );
-wfLoadExtension( 'TitleBlacklist', "/www/wwwroot/mw-utils/YsArchives-Extensions/TitleBlacklist/extension.json" );
-wfLoadExtension( 'VisualEditor', "/www/wwwroot/mw-utils/YsArchives-Extensions/VisualEditor/extension.json" );
+wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
+wfLoadExtension( 'PdfHandler', "$ysyExtensionsPath/PdfHandler/extension.json" );
+wfLoadExtension( 'Poem', "$ysyExtensionsPath/Poem/extension.json" );
+wfLoadExtension( 'Renameuser', "$ysyExtensionsPath/Renameuser/extension.json" );
+wfLoadExtension( 'ReplaceText', "$ysyExtensionsPath/ReplaceText/extension.json" );
+wfLoadExtension( 'SecureLinkFixer', "$ysyExtensionsPath/SecureLinkFixer/extension.json" );
+wfLoadExtension( 'SpamBlacklist', "$ysyExtensionsPath/SpamBlacklist/extension.json" );
+wfLoadExtension( 'TemplateData', "$ysyExtensionsPath/TemplateData/extension.json" );
+wfLoadExtension( 'TextExtracts', "$ysyExtensionsPath/TextExtracts/extension.json" );
+wfLoadExtension( 'TitleBlacklist', "$ysyExtensionsPath/TitleBlacklist/extension.json" );
+wfLoadExtension( 'VisualEditor', "$ysyExtensionsPath/VisualEditor/extension.json" );
 $wgVisualEditorEnableBetaFeature = true;
 $wgVisualEditorEnableDiffPageBetaFeature = true;
 $wgVisualEditorTabPosition = 'after';
@@ -59,18 +63,18 @@ $wgVisualEditorAvailableNamespaces = [
 $wgVisualEditorDisableForAnons = true;
 $wgVisualEditorSerializationCacheTimeout = 30;
 
-wfLoadExtension( 'WikiEditor', "/www/wwwroot/mw-utils/YsArchives-Extensions/WikiEditor/extension.json" );
+wfLoadExtension( 'WikiEditor', "$ysyExtensionsPath/WikiEditor/extension.json" );
 $wgWikiEditorRealtimePreview = true;
 $wgDefaultUserOptions['usebetatoolbar'] = 1; // user option provided by WikiEditor extension
 
-wfLoadExtension( 'Popups', "/www/wwwroot/mw-utils/YsArchives-Extensions/Popups/extension.json" );
+wfLoadExtension( 'Popups', "$ysyExtensionsPath/Popups/extension.json" );
 $wgPopupsHideOptInOnPreferencesPage = true;
 $wgPopupsReferencePreviewsBetaFeature = false;
 
-wfLoadExtension( 'FileImporter', "/www/wwwroot/mw-utils/YsArchives-Extensions/FileImporter/extension.json" );
-wfLoadExtension( 'MassMessage', "/www/wwwroot/mw-utils/YsArchives-Extensions/MassMessage/extension.json" );
-wfLoadExtension( 'Elastica', "/www/wwwroot/mw-utils/YsArchives-Extensions/Elastica/extension.json" );
-wfLoadExtension( 'CirrusSearch', "/www/wwwroot/mw-utils/YsArchives-Extensions/CirrusSearch/extension.json" );
+wfLoadExtension( 'FileImporter', "$ysyExtensionsPath/FileImporter/extension.json" );
+wfLoadExtension( 'MassMessage', "$ysyExtensionsPath/MassMessage/extension.json" );
+wfLoadExtension( 'Elastica', "$ysyExtensionsPath/Elastica/extension.json" );
+wfLoadExtension( 'CirrusSearch', "$ysyExtensionsPath/CirrusSearch/extension.json" );
 $wgSearchType = 'CirrusSearch';
 $wgCirrusSearchUseCompletionSuggester = 'yes';
 $wgCirrusSearchPhraseSuggestUseText = true;
@@ -85,14 +89,14 @@ $wgCirrusSearchMoreLikeThisAllowedFields = [
         'all'
     ];
 
-wfLoadExtension( 'AdvancedSearch', "/www/wwwroot/mw-utils/YsArchives-Extensions/AdvancedSearch/extension.json" );
+wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
 
-wfLoadExtension( 'MediaSearch', "/www/wwwroot/mw-utils/YsArchives-Extensions/MediaSearch/extension.json" );
-wfLoadExtension( 'CodeMirror', "/www/wwwroot/mw-utils/YsArchives-Extensions/CodeMirror/extension.json" );
-wfLoadExtension( 'ParserFunctions', "/www/wwwroot/mw-utils/YsArchives-Extensions/ParserFunctions/extension.json" );
-wfLoadExtension( 'CodeEditor', "/www/wwwroot/mw-utils/YsArchives-Extensions/CodeEditor/extension.json" );
-wfLoadExtension( 'Linter', "/www/wwwroot/mw-utils/YsArchives-Extensions/Linter/extension.json" );
+wfLoadExtension( 'MediaSearch', "$ysyExtensionsPath/MediaSearch/extension.json" );
+wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
+wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
+wfLoadExtension( 'CodeEditor', "$ysyExtensionsPath/CodeEditor/extension.json" );
+wfLoadExtension( 'Linter', "$ysyExtensionsPath/Linter/extension.json" );
 # 为了使linter工作，使Parsoid作为扩展加载，添加接入点
 wfLoadExtension( 'Parsoid', "$IP/vendor/wikimedia/parsoid/extension.json" );
 $wgParsoidSettings = [
@@ -118,124 +122,124 @@ $wgVirtualRestConfig = [
 	],
 ];
 
-wfLoadExtension( 'InterwikiExtracts', "/www/wwwroot/mw-utils/YsArchives-Extensions/InterwikiExtracts/extension.json" );
-wfLoadExtension( 'CheckUser', "/www/wwwroot/mw-utils/YsArchives-Extensions/CheckUser/extension.json" );
+wfLoadExtension( 'InterwikiExtracts', "$ysyExtensionsPath/InterwikiExtracts/extension.json" );
+wfLoadExtension( 'CheckUser', "$ysyExtensionsPath/CheckUser/extension.json" );
 $wgCheckUserEnableSpecialInvestigate = true;
 
-wfLoadExtension( 'SandboxLink', "/www/wwwroot/mw-utils/YsArchives-Extensions/SandboxLink/extension.json" );
-wfLoadExtension( 'TemplateStyles', "/www/wwwroot/mw-utils/YsArchives-Extensions/TemplateStyles/extension.json" );
-wfLoadExtension( 'TemplateStylesExtender', "/www/wwwroot/mw-utils/YsArchives-Extensions/TemplateStylesExtender/extension.json" );
-wfLoadExtension( 'SyntaxHighlight_GeSHi', "/www/wwwroot/mw-utils/YsArchives-Extensions/SyntaxHighlight_GeSHi/extension.json" );
-wfLoadExtension( 'Citoid', "/www/wwwroot/mw-utils/YsArchives-Extensions/Citoid/extension.json" );
-wfLoadExtension( 'LabeledSectionTransclusion', "/www/wwwroot/mw-utils/YsArchives-Extensions/LabeledSectionTransclusion/extension.json" );
-wfLoadExtension( 'RevisionSlider', "/www/wwwroot/mw-utils/YsArchives-Extensions/RevisionSlider/extension.json" );
-wfLoadExtension( 'EventLogging', "/www/wwwroot/mw-utils/YsArchives-Extensions/EventLogging/extension.json" );
+wfLoadExtension( 'SandboxLink', "$ysyExtensionsPath/SandboxLink/extension.json" );
+wfLoadExtension( 'TemplateStyles', "$ysyExtensionsPath/TemplateStyles/extension.json" );
+wfLoadExtension( 'TemplateStylesExtender', "$ysyExtensionsPath/TemplateStylesExtender/extension.json" );
+wfLoadExtension( 'SyntaxHighlight_GeSHi', "$ysyExtensionsPath/SyntaxHighlight_GeSHi/extension.json" );
+wfLoadExtension( 'Citoid', "$ysyExtensionsPath/Citoid/extension.json" );
+wfLoadExtension( 'LabeledSectionTransclusion', "$ysyExtensionsPath/LabeledSectionTransclusion/extension.json" );
+wfLoadExtension( 'RevisionSlider', "$ysyExtensionsPath/RevisionSlider/extension.json" );
+wfLoadExtension( 'EventLogging', "$ysyExtensionsPath/EventLogging/extension.json" );
 $wgEventLoggingBaseUri = '/beacon/event';
 #$wgEventLoggingServiceUri = '/beacon/intake-analytics';
 $wgEventLoggingStreamNames = true;
 
-wfLoadExtension( 'Scribunto', "/www/wwwroot/mw-utils/YsArchives-Extensions/Scribunto/extension.json" );
+wfLoadExtension( 'Scribunto', "$ysyExtensionsPath/Scribunto/extension.json" );
 $wgScribuntoDefaultEngine = 'luasandbox';
 $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
 
-wfLoadExtension( 'Echo', "/www/wwwroot/mw-utils/YsArchives-Extensions/Echo/extension.json" );
+wfLoadExtension( 'Echo', "$ysyExtensionsPath/Echo/extension.json" );
 // Echo增强设置
 $wgEchoEmailFooterAddress = '有兽档案馆，开放的有兽焉wiki';
 
-wfLoadExtension( 'MassEditRegex', "/www/wwwroot/mw-utils/YsArchives-Extensions/MassEditRegex/extension.json" );
-wfLoadExtension( 'TemplateSandbox', "/www/wwwroot/mw-utils/YsArchives-Extensions/TemplateSandbox/extension.json" );
-wfLoadExtension( 'TwoColConflict', "/www/wwwroot/mw-utils/YsArchives-Extensions/TwoColConflict/extension.json" );
+wfLoadExtension( 'MassEditRegex', "$ysyExtensionsPath/MassEditRegex/extension.json" );
+wfLoadExtension( 'TemplateSandbox', "$ysyExtensionsPath/TemplateSandbox/extension.json" );
+wfLoadExtension( 'TwoColConflict', "$ysyExtensionsPath/TwoColConflict/extension.json" );
 $wgTwoColConflictUseInline = false;
 
-#wfLoadExtension( 'EmbedVideo', "/www/wwwroot/mw-utils/YsArchives-Extensions/EmbedVideo/extension.json" );
-wfLoadExtension( 'WikiSEO', "/www/wwwroot/mw-utils/YsArchives-Extensions/WikiSEO/extension.json" );
+#wfLoadExtension( 'EmbedVideo', "$ysyExtensionsPath/EmbedVideo/extension.json" );
+wfLoadExtension( 'WikiSEO', "$ysyExtensionsPath/WikiSEO/extension.json" );
 # SEO配置
 #$wgWikiSeoDefaultLanguage = 'zh';
 $wgWikiSeoEnableAutoDescription = true;
 
-wfLoadExtension( 'UploadWizard', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadWizard/extension.json" );
-wfLoadExtension( 'Disambiguator', "/www/wwwroot/mw-utils/YsArchives-Extensions/Disambiguator/extension.json" );
-wfLoadExtension( 'WikiLove', "/www/wwwroot/mw-utils/YsArchives-Extensions/WikiLove/extension.json" );
+wfLoadExtension( 'UploadWizard', "$ysyExtensionsPath/UploadWizard/extension.json" );
+wfLoadExtension( 'Disambiguator', "$ysyExtensionsPath/Disambiguator/extension.json" );
+wfLoadExtension( 'WikiLove', "$ysyExtensionsPath/WikiLove/extension.json" );
 $wgWikiLoveGlobal = true;
 
-wfLoadExtension( 'Thanks', "/www/wwwroot/mw-utils/YsArchives-Extensions/Thanks/extension.json" );
-wfLoadExtension( 'AJAXPoll', "/www/wwwroot/mw-utils/YsArchives-Extensions/AJAXPoll/extension.json" );
-wfLoadExtension( 'LabeledSectionTransclusion', "/www/wwwroot/mw-utils/YsArchives-Extensions/LabeledSectionTransclusion/extension.json" );
-wfLoadExtension( 'cldr', "/www/wwwroot/mw-utils/YsArchives-Extensions/cldr/extension.json" );
-wfLoadExtension( 'OAuth', "/www/wwwroot/mw-utils/YsArchives-Extensions/OAuth/extension.json" );
+wfLoadExtension( 'Thanks', "$ysyExtensionsPath/Thanks/extension.json" );
+wfLoadExtension( 'AJAXPoll', "$ysyExtensionsPath/AJAXPoll/extension.json" );
+wfLoadExtension( 'LabeledSectionTransclusion', "$ysyExtensionsPath/LabeledSectionTransclusion/extension.json" );
+wfLoadExtension( 'cldr', "$ysyExtensionsPath/cldr/extension.json" );
+wfLoadExtension( 'OAuth', "$ysyExtensionsPath/OAuth/extension.json" );
 // Oauth 秘钥
 $wgMWOAuthSecureTokenTransfer = true;
 $wgOAuth2PrivateKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/private.key";
 $wgOAuth2PublicKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/public.key";
 
-wfLoadExtension( 'OrphanedTalkPages', "/www/wwwroot/mw-utils/YsArchives-Extensions/OrphanedTalkPages/extension.json" );
-wfLoadExtension( 'NewSignupPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/NewSignupPage/extension.json" );
-wfLoadExtension( 'AntiSpoof', "/www/wwwroot/mw-utils/YsArchives-Extensions/AntiSpoof/extension.json" );
-wfLoadExtension( 'CommonsMetadata', "/www/wwwroot/mw-utils/YsArchives-Extensions/CommonsMetadata/extension.json" );
-wfLoadExtension( 'PageForms', "/www/wwwroot/mw-utils/YsArchives-Extensions/PageForms/extension.json" );
+wfLoadExtension( 'OrphanedTalkPages', "$ysyExtensionsPath/OrphanedTalkPages/extension.json" );
+wfLoadExtension( 'NewSignupPage', "$ysyExtensionsPath/NewSignupPage/extension.json" );
+wfLoadExtension( 'AntiSpoof', "$ysyExtensionsPath/AntiSpoof/extension.json" );
+wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
+wfLoadExtension( 'PageForms', "$ysyExtensionsPath/PageForms/extension.json" );
 # Page Forms 设置
 $wgPageFormsMaxLocalAutocompleteValues = 500;
 $wgPageFormsRedLinksCheckOnlyLocalProps = true;
 
-wfLoadExtension( 'RegexFunctions', "/www/wwwroot/mw-utils/YsArchives-Extensions/RegexFunctions/extension.json" );
-wfLoadExtension( 'Lockdown', "/www/wwwroot/mw-utils/YsArchives-Extensions/Lockdown/extension.json" );
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/Lockdowns.php";
+wfLoadExtension( 'RegexFunctions', "$ysyExtensionsPath/RegexFunctions/extension.json" );
+wfLoadExtension( 'Lockdown', "$ysyExtensionsPath/Lockdown/extension.json" );
+require_once "$ysySettingsPath/Lockdowns.php";
 
-wfLoadExtension( 'UserMerge', "/www/wwwroot/mw-utils/YsArchives-Extensions/UserMerge/extension.json" );
+wfLoadExtension( 'UserMerge', "$ysyExtensionsPath/UserMerge/extension.json" );
 $wgUserMergeProtectedGroups = [ 'sysop', 'steward' ];
 
-wfLoadExtension( 'LoginNotify', "/www/wwwroot/mw-utils/YsArchives-Extensions/LoginNotify/extension.json" );
+wfLoadExtension( 'LoginNotify', "$ysyExtensionsPath/LoginNotify/extension.json" );
 // 登录告警
 $wgLoginNotifyAttemptsKnownIP = 5;
 $wgLoginNotifyAttemptsNewIP = 3;
 
-wfLoadExtension( 'TabberNeue', "/www/wwwroot/mw-utils/YsArchives-Extensions/TabberNeue/extension.json" );
+wfLoadExtension( 'TabberNeue', "$ysyExtensionsPath/TabberNeue/extension.json" );
 $wgTabberNeueEnableAnimation = true;
 $wgTabberNeueUpdateLocationOnTabChange = true;
 
-wfLoadExtension( 'ContributionScores', "/www/wwwroot/mw-utils/YsArchives-Extensions/ContributionScores/extension.json" );
+wfLoadExtension( 'ContributionScores', "$ysyExtensionsPath/ContributionScores/extension.json" );
 // 贡献分数
 $wgContribScoreIgnoreBots = true;
 $wgContribScoreIgnoreBlockedUsers = false;
 $wgContribScoreIgnoreUsernames = [];
 $wgContribScoresUseRealName = false;
 
-wfLoadExtension( 'PinyinSort', "/www/wwwroot/mw-utils/YsArchives-Extensions/PinyinSort/extension.json" );
+wfLoadExtension( 'PinyinSort', "$ysyExtensionsPath/PinyinSort/extension.json" );
 // 拼音分类
 $wgCategoryCollation = 'pinyin-noprefix';
 
-wfLoadExtension( 'DarkMode', "/www/wwwroot/mw-utils/YsArchives-Extensions/DarkMode/extension.json" );
-wfLoadExtension( 'CollapsibleSidebar', "/www/wwwroot/mw-utils/YsArchives-Extensions/CollapsibleSidebar/extension.json" );
+wfLoadExtension( 'DarkMode', "$ysyExtensionsPath/DarkMode/extension.json" );
+wfLoadExtension( 'CollapsibleSidebar', "$ysyExtensionsPath/CollapsibleSidebar/extension.json" );
 
-wfLoadExtension( 'Avatar', "/www/wwwroot/mw-utils/YsArchives-Extensions/Avatar/extension.json" );
+wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
 //Avatar插件配置
 $wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
 $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
 
-wfLoadExtension( 'FileImporter', "/www/wwwroot/mw-utils/YsArchives-Extensions/FileImporter/extension.json" );
+wfLoadExtension( 'FileImporter', "$ysyExtensionsPath/FileImporter/extension.json" );
 // FileImporter
 $wgFileImporterShowInputScreen = true;
 $wgFileImporterRequiredRight = 'import';
 
-wfLoadExtension( 'MultiBoilerplate', "/www/wwwroot/mw-utils/YsArchives-Extensions/MultiBoilerplate/extension.json" );
-wfLoadExtension( 'NewUserMessage', "/www/wwwroot/mw-utils/YsArchives-Extensions/NewUserMessage/extension.json" );
-wfLoadExtension( 'CreateUserPage', "/www/wwwroot/mw-utils/YsArchives-Extensions/CreateUserPage/extension.json" );
+wfLoadExtension( 'MultiBoilerplate', "$ysyExtensionsPath/MultiBoilerplate/extension.json" );
+wfLoadExtension( 'NewUserMessage', "$ysyExtensionsPath/NewUserMessage/extension.json" );
+wfLoadExtension( 'CreateUserPage', "$ysyExtensionsPath/CreateUserPage/extension.json" );
 $wgCreateUserPage_AutoCreateUser = 'New user page';
 $wgCreateUserPage_PageContent ='{{用户页}}';
 
-wfLoadExtension( 'Widgets', "/www/wwwroot/mw-utils/YsArchives-Extensions/Widgets/extension.json" );
+wfLoadExtension( 'Widgets', "$ysyExtensionsPath/Widgets/extension.json" );
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['widgeteditor'] );
 };
 
-#wfLoadExtension( 'NativeSvgHandler', "/www/wwwroot/mw-utils/YsArchives-Extensions/NativeSvgHandler/extension.json" );
-wfLoadExtension( 'TemplateWizard', "/www/wwwroot/mw-utils/YsArchives-Extensions/TemplateWizard/extension.json" );
-#wfLoadExtension( 'GrowthExperiments', "/www/wwwroot/mw-utils/YsArchives-Extensions/GrowthExperiments/extension.json" );
-#wfLoadExtension( 'PageViewInfo', "/www/wwwroot/mw-utils/YsArchives-Extensions/PageViewInfo/extension.json" );
-wfLoadExtension( 'RNRSHook', "/www/wwwroot/mw-utils/YsArchives-Extensions/RNRSHook/extension.json" );
-wfLoadExtension( 'FeaturedFeeds', "/www/wwwroot/mw-utils/YsArchives-Extensions/FeaturedFeeds/extension.json" );
+#wfLoadExtension( 'NativeSvgHandler', "$ysyExtensionsPath/NativeSvgHandler/extension.json" );
+wfLoadExtension( 'TemplateWizard', "$ysyExtensionsPath/TemplateWizard/extension.json" );
+#wfLoadExtension( 'GrowthExperiments', "$ysyExtensionsPath/GrowthExperiments/extension.json" );
+#wfLoadExtension( 'PageViewInfo', "$ysyExtensionsPath/PageViewInfo/extension.json" );
+wfLoadExtension( 'RNRSHook', "$ysyExtensionsPath/RNRSHook/extension.json" );
+wfLoadExtension( 'FeaturedFeeds', "$ysyExtensionsPath/FeaturedFeeds/extension.json" );
 $wgFeaturedFeeds['ysarchives-biweekly'] = [
 	'page' => 'Ffeed-ysarchives-biweekly-page',
 	'title' => 'Ffeed-ysarchives-biweekly-title',
@@ -252,15 +256,15 @@ $wgDisplayFeedsInSidebar = false;
 # Add more configuration options below.
 
 // 语义维基配置及插件配置
-wfLoadExtension( 'SemanticMediaWiki', "/www/wwwroot/mw-utils/YsArchives-Extensions/SemanticMediaWiki/extension.json" );
+wfLoadExtension( 'SemanticMediaWiki', "$ysyExtensionsPath/SemanticMediaWiki/extension.json" );
 enableSemantics();
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['smwadministrator'] );
     unset( $wgGroupPermissions['smwcurator'] );
 };
-wfLoadExtension( 'SemanticScribunto', "/www/wwwroot/mw-utils/YsArchives-Extensions/SemanticScribunto/extension.json" );
-wfLoadExtension( 'SemanticDrilldown', "/www/wwwroot/mw-utils/YsArchives-Extensions/SemanticDrilldown/extension.json" );
-wfLoadExtension( 'SemanticResultFormats', "/www/wwwroot/mw-utils/YsArchives-Extensions/SemanticResultFormats/extension.json" );
+wfLoadExtension( 'SemanticScribunto', "$ysyExtensionsPath/SemanticScribunto/extension.json" );
+wfLoadExtension( 'SemanticDrilldown', "$ysyExtensionsPath/SemanticDrilldown/extension.json" );
+wfLoadExtension( 'SemanticResultFormats', "$ysyExtensionsPath/SemanticResultFormats/extension.json" );
 // $smwgEnabledFulltextSearch = true;
 # 语义维基调优
 $smwgQMaxLimit = 5000;
@@ -271,20 +275,20 @@ $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = fal
 $smwgMaintenanceLanguage = 'zh';
 
 // NewUserMessage
-require_once('/www/wwwroot/mw-utils/YsArchives-Extensions/NewUserMessage/includes/NewUserMessage.php');
+require_once('$ysyExtensionsPath/NewUserMessage/includes/NewUserMessage.php');
 
-wfLoadExtension( 'HeaderTabs', "/www/wwwroot/mw-utils/YsArchives-Extensions/HeaderTabs/extension.json" );
+wfLoadExtension( 'HeaderTabs', "$ysyExtensionsPath/HeaderTabs/extension.json" );
 
-wfLoadExtension( 'ArticleCreationWorkflow', "/www/wwwroot/mw-utils/YsArchives-Extensions/ArticleCreationWorkflow/extension.json" );
+wfLoadExtension( 'ArticleCreationWorkflow', "$ysyExtensionsPath/ArticleCreationWorkflow/extension.json" );
 $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
 
-wfLoadExtension( 'UploadsLink', "/www/wwwroot/mw-utils/YsArchives-Extensions/UploadsLink/extension.json" );
+wfLoadExtension( 'UploadsLink', "$ysyExtensionsPath/UploadsLink/extension.json" );
 
-wfLoadExtension( 'DiscussionTools', "/www/wwwroot/mw-utils/YsArchives-Extensions/DiscussionTools/extension.json" );
+wfLoadExtension( 'DiscussionTools', "$ysyExtensionsPath/DiscussionTools/extension.json" );
 $wgDiscussionToolsEnable = true;
 $wgDiscussionToolsEnablePermalinksBackend = true;
 
-wfLoadExtension( 'TimedMediaHandler', "/www/wwwroot/mw-utils/YsArchives-Extensions/TimedMediaHandler/extension.json" );
+wfLoadExtension( 'TimedMediaHandler', "$ysyExtensionsPath/TimedMediaHandler/extension.json" );
 $wgFFmpegLocation = '/usr/bin/ffmpeg';
 $wgMinimumVideoPlayerSize = 200;
 $wgEnableTranscode = true;
@@ -321,4 +325,6 @@ $wgTmhEnableMp4Uploads = true;
 // If you use ffmpeg 2, it can be set to true
 $wgUseFFmpeg2 = false;
 
-wfLoadExtension( 'DynamicPageList3', "/www/wwwroot/mw-utils/YsArchives-Extensions/DynamicPageList3/extension.json" );
+wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extension.json" );
+
+wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
