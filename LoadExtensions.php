@@ -275,7 +275,7 @@ $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = fal
 $smwgMaintenanceLanguage = 'zh';
 
 // NewUserMessage
-require_once('$ysyExtensionsPath/NewUserMessage/includes/NewUserMessage.php');
+wfLoadExtension( 'NewUserMessage', "$ysyExtensionsPath/NewUserMessage/extension.json" );
 
 wfLoadExtension( 'HeaderTabs', "$ysyExtensionsPath/HeaderTabs/extension.json" );
 
