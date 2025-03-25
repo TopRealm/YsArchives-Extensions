@@ -377,6 +377,3 @@
 	path = CentralAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CentralAuth
 	branch = REL1_43
-[submodule "AddImgTag"]
-	path = AddImgTag
-	url = https://github.com/TopRealm/mediawiki-extensions-AddImgTag
