@@ -328,3 +328,5 @@ $wgUseFFmpeg2 = false;
 wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extension.json" );
 
 wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
+$wgAddImgTagBlacklist = true;
+$wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
