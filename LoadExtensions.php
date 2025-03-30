@@ -265,6 +265,7 @@ $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
 wfLoadExtension( 'SemanticScribunto', "$ysyExtensionsPath/SemanticScribunto/extension.json" );
 wfLoadExtension( 'SemanticDrilldown', "$ysyExtensionsPath/SemanticDrilldown/extension.json" );
 wfLoadExtension( 'SemanticResultFormats', "$ysyExtensionsPath/SemanticResultFormats/extension.json" );
+wfLoadExtension( 'SemanticMetaTags', "$ysyExtensionsPath/SemanticMetaTags/extension.json" );
 // $smwgEnabledFulltextSearch = true;
 # 语义维基调优
 $smwgQMaxLimit = 5000;

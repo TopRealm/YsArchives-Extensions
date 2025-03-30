@@ -380,3 +380,6 @@
 [submodule "AddImgTag"]
 	path = AddImgTag
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-AddImgTag
+[submodule "SemanticMetaTags"]
+	path = SemanticMetaTags
+	url = https://git.qiuwen.net.cn/YSARXIV/SemanticMetaTags
