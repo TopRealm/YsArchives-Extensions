@@ -258,10 +258,6 @@
 	path = WikiLove
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-WikiLove
 	branch = REL1_43
-[submodule "WikiSEO"]
-	path = WikiSEO
-	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-WikiSEO
-	branch = master
 [submodule "cldr"]
 	path = cldr
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-cldr
