@@ -92,10 +92,6 @@ $wgCirrusSearchMoreLikeThisAllowedFields = [
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
 
-wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.json" );
-$wgAllowDisplayTitle = true;
-$wgRestrictDisplayTitle = false;
-
 wfLoadExtension( 'MediaSearch', "$ysyExtensionsPath/MediaSearch/extension.json" );
 wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
 wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
@@ -256,12 +252,6 @@ $wgFeaturedFeedsDefaults = [
 'inUserLanguage' => false,
 ];
 $wgDisplayFeedsInSidebar = false;
-
-$wgHooks['BeforeInitialize'][] = function () {
-    global $wgLanguageCode;
-    $wgLanguageCode = MW_LANGUAGE_CODE;
-    return true;
-};
 
 // 语义维基配置及插件配置
 wfLoadExtension( 'SemanticMediaWiki', "$ysyExtensionsPath/SemanticMediaWiki/extension.json" );
