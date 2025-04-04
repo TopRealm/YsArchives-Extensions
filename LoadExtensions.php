@@ -3,14 +3,35 @@
 $ysyExtensionsPath = "/www/wwwroot/mw-utils/YsArchives-Extensions";
 $ysySettingsPath = "/www/wwwroot/mw-utils/YsArchives-Settings";
 
-# 扩展
+wfLoadExtension( 'AbuseFilter', "$ysyExtensionsPath/AbuseFilter/extension.json" );
+$wgAbuseFilterEnableBlockedExternalDomain = true;
+
+wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
+$wgAddImgTagBlacklist = true;
+$wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
+
+wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
+##$wgAdvancedSearchHighlighting = true;
+
+wfLoadExtension( 'AJAXPoll', "$ysyExtensionsPath/AJAXPoll/extension.json" );
+
+wfLoadExtension( 'AntiSpoof', "$ysyExtensionsPath/AntiSpoof/extension.json" );
+
+wfLoadExtension( 'ArticleCreationWorkflow', "$ysyExtensionsPath/ArticleCreationWorkflow/extension.json" );
+$wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
+
+wfLoadExtension( 'ArticleMetaDescription', "$ysyExtensionsPath/ArticleMetaDescription/extension.json" );
+
+wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
+//Avatar插件配置
+$wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
+$wgMaxAvatarResolution = 512;
+$wgDefaultAvatarRes = 256;
+
 wfLoadExtension( 'Gadgets', "$ysyExtensionsPath/Gadgets/extension.json" );
 wfLoadExtension( 'Matomo', "$ysyExtensionsPath/Matomo/extension.json" );
 // Matomo访问信息收集
 require_once "$ysySettingsPath/MatomoSettings.php";
-
-wfLoadExtension( 'AbuseFilter', "$ysyExtensionsPath/AbuseFilter/extension.json" );
-$wgAbuseFilterEnableBlockedExternalDomain = true;
 
 wfLoadExtension( 'CategoryTree', "$ysyExtensionsPath/CategoryTree/extension.json" );
 wfLoadExtension( 'Cite', "$ysyExtensionsPath/Cite/extension.json" );
@@ -89,9 +110,6 @@ $wgCirrusSearchMoreLikeThisAllowedFields = [
         'all'
     ];
 
-wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
-##$wgAdvancedSearchHighlighting = true;
-
 wfLoadExtension( 'MediaSearch', "$ysyExtensionsPath/MediaSearch/extension.json" );
 wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
 wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
@@ -164,7 +182,6 @@ wfLoadExtension( 'WikiLove', "$ysyExtensionsPath/WikiLove/extension.json" );
 $wgWikiLoveGlobal = true;
 
 wfLoadExtension( 'Thanks', "$ysyExtensionsPath/Thanks/extension.json" );
-wfLoadExtension( 'AJAXPoll', "$ysyExtensionsPath/AJAXPoll/extension.json" );
 wfLoadExtension( 'LabeledSectionTransclusion', "$ysyExtensionsPath/LabeledSectionTransclusion/extension.json" );
 wfLoadExtension( 'cldr', "$ysyExtensionsPath/cldr/extension.json" );
 wfLoadExtension( 'OAuth', "$ysyExtensionsPath/OAuth/extension.json" );
@@ -175,7 +192,6 @@ $wgOAuth2PublicKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/public.key";
 
 wfLoadExtension( 'OrphanedTalkPages', "$ysyExtensionsPath/OrphanedTalkPages/extension.json" );
 wfLoadExtension( 'NewSignupPage', "$ysyExtensionsPath/NewSignupPage/extension.json" );
-wfLoadExtension( 'AntiSpoof', "$ysyExtensionsPath/AntiSpoof/extension.json" );
 wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
 wfLoadExtension( 'PageForms', "$ysyExtensionsPath/PageForms/extension.json" );
 # Page Forms 设置
@@ -211,13 +227,6 @@ $wgCategoryCollation = 'pinyin-noprefix';
 
 wfLoadExtension( 'DarkMode', "$ysyExtensionsPath/DarkMode/extension.json" );
 wfLoadExtension( 'CollapsibleSidebar', "$ysyExtensionsPath/CollapsibleSidebar/extension.json" );
-
-wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
-//Avatar插件配置
-$wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
-$wgMaxAvatarResolution = 512;
-$wgDefaultAvatarRes = 256;
-
 wfLoadExtension( 'FileImporter', "$ysyExtensionsPath/FileImporter/extension.json" );
 // FileImporter
 $wgFileImporterShowInputScreen = true;
@@ -278,9 +287,6 @@ wfLoadExtension( 'NewUserMessage', "$ysyExtensionsPath/NewUserMessage/extension.
 
 wfLoadExtension( 'HeaderTabs', "$ysyExtensionsPath/HeaderTabs/extension.json" );
 
-wfLoadExtension( 'ArticleCreationWorkflow', "$ysyExtensionsPath/ArticleCreationWorkflow/extension.json" );
-$wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
-
 wfLoadExtension( 'UploadsLink', "$ysyExtensionsPath/UploadsLink/extension.json" );
 
 wfLoadExtension( 'DiscussionTools', "$ysyExtensionsPath/DiscussionTools/extension.json" );
@@ -325,7 +331,3 @@ $wgTmhEnableMp4Uploads = true;
 $wgUseFFmpeg2 = false;
 
 wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extension.json" );
-
-wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
-$wgAddImgTagBlacklist = true;
-$wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
