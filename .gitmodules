@@ -383,3 +383,6 @@
 [submodule "SemanticMetaTags"]
 	path = SemanticMetaTags
 	url = https://git.qiuwen.net.cn/YSARXIV/SemanticMetaTags
+[submodule "CommentStreams"]
+	path = CommentStreams
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CommentStreams

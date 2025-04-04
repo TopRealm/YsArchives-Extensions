@@ -331,3 +331,7 @@ wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extens
 wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
 $wgAddImgTagBlacklist = true;
 $wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
+
+wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.json" );
+$wgAllowDisplayTitle = true;
+$wgRestrictDisplayTitle = false;
