@@ -153,10 +153,10 @@ wfLoadExtension( 'TwoColConflict', "$ysyExtensionsPath/TwoColConflict/extension.
 $wgTwoColConflictUseInline = false;
 
 #wfLoadExtension( 'EmbedVideo', "$ysyExtensionsPath/EmbedVideo/extension.json" );
-wfLoadExtension( 'WikiSEO', "$ysyExtensionsPath/WikiSEO/extension.json" );
+#wfLoadExtension( 'WikiSEO', "$ysyExtensionsPath/WikiSEO/extension.json" );
 # SEO配置
 #$wgWikiSeoDefaultLanguage = 'zh';
-$wgWikiSeoEnableAutoDescription = true;
+#$wgWikiSeoEnableAutoDescription = false;
 
 wfLoadExtension( 'UploadWizard', "$ysyExtensionsPath/UploadWizard/extension.json" );
 wfLoadExtension( 'Disambiguator', "$ysyExtensionsPath/Disambiguator/extension.json" );
