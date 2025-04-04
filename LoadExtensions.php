@@ -92,6 +92,10 @@ $wgCirrusSearchMoreLikeThisAllowedFields = [
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
 
+wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.json" );
+$wgAllowDisplayTitle = true;
+$wgRestrictDisplayTitle = false;
+
 wfLoadExtension( 'MediaSearch', "$ysyExtensionsPath/MediaSearch/extension.json" );
 wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
 wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
@@ -253,7 +257,11 @@ $wgFeaturedFeedsDefaults = [
 ];
 $wgDisplayFeedsInSidebar = false;
 
-# Add more configuration options below.
+$wgHooks['BeforeInitialize'][] = function () {
+    global $wgLanguageCode;
+    $wgLanguageCode = MW_LANGUAGE_CODE;
+    return true;
+};
 
 // 语义维基配置及插件配置
 wfLoadExtension( 'SemanticMediaWiki', "$ysyExtensionsPath/SemanticMediaWiki/extension.json" );
@@ -331,7 +339,3 @@ wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extens
 wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
 $wgAddImgTagBlacklist = true;
 $wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
-
-wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.json" );
-$wgAllowDisplayTitle = true;
-$wgRestrictDisplayTitle = false;
