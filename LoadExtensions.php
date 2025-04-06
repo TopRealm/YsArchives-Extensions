@@ -1,4 +1,10 @@
 <?php
+if (!function_exists('wfLoadExtension')) {
+    function wfLoadExtension($extensionName, $path = null) {
+        // 伪定义，仅用于静态分析工具
+    }
+}
+
 # 定义基础路径
 $ysyExtensionsPath = "/www/wwwroot/mw-utils/YsArchives-Extensions";
 $ysySettingsPath = "/www/wwwroot/mw-utils/YsArchives-Settings";
