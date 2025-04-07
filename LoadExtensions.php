@@ -9,6 +9,7 @@ if (!function_exists('wfLoadExtension')) {
 $ysyExtensionsPath = "/www/wwwroot/mw-utils/YsArchives-Extensions";
 $ysySettingsPath = "/www/wwwroot/mw-utils/YsArchives-Settings";
 
+// A
 wfLoadExtension( 'AbuseFilter', "$ysyExtensionsPath/AbuseFilter/extension.json" );
 $wgAbuseFilterEnableBlockedExternalDomain = true;
 
@@ -34,15 +35,43 @@ $wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
 $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
 
-wfLoadExtension( 'Gadgets', "$ysyExtensionsPath/Gadgets/extension.json" );
-wfLoadExtension( 'Matomo', "$ysyExtensionsPath/Matomo/extension.json" );
-// Matomo访问信息收集
-require_once "$ysySettingsPath/MatomoSettings.php";
+// B
+wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json" );
 
+// C
 wfLoadExtension( 'CategoryTree', "$ysyExtensionsPath/CategoryTree/extension.json" );
+
+wfLoadExtension( 'CirrusSearch', "$ysyExtensionsPath/CirrusSearch/extension.json" );
+$wgSearchType = 'CirrusSearch';
+$wgCirrusSearchUseCompletionSuggester = 'yes';
+$wgCirrusSearchPhraseSuggestUseText = true;
+$wgCirrusSearchPhraseSuggestUseOpeningText = true;
+$wgCirrusSearchPrefixSearchStartsWithAnyWord = true;
+$wgCirrusSearchMoreLikeThisAllowedFields = [
+        'title',
+        'text',
+        'auxiliary_text',
+        'opening_text',
+        'headings',
+        'all'
+    ];
+
 wfLoadExtension( 'Cite', "$ysyExtensionsPath/Cite/extension.json" );
+
 wfLoadExtension( 'CiteThisPage', "$ysyExtensionsPath/CiteThisPage/extension.json" );
+
+wfLoadExtension( 'Citoid', "$ysyExtensionsPath/Citoid/extension.json" );
+
+wfLoadExtension( 'cldr', "$ysyExtensionsPath/cldr/extension.json" );
+
+wfLoadExtension( 'CodeEditor', "$ysyExtensionsPath/CodeEditor/extension.json" );
+
+wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
+
+wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
+
 wfLoadExtension( 'ConfirmEdit', "$ysyExtensionsPath/ConfirmEdit/extension.json" );
+
 wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "$ysyExtensionsPath/ConfirmEdit/QuestyCaptcha/extension.json" );
 require_once "$ysySettingsPath/hCaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
@@ -52,7 +81,11 @@ $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
 
-wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json" );
+wfLoadExtension( 'Gadgets', "$ysyExtensionsPath/Gadgets/extension.json" );
+wfLoadExtension( 'Matomo', "$ysyExtensionsPath/Matomo/extension.json" );
+// Matomo访问信息收集
+require_once "$ysySettingsPath/MatomoSettings.php";
+
 wfLoadExtension( 'ImageMap', "$ysyExtensionsPath/ImageMap/extension.json" );
 wfLoadExtension( 'InputBox', "$ysyExtensionsPath/InputBox/extension.json" );
 wfLoadExtension( 'Interwiki', "$ysyExtensionsPath/Interwiki/extension.json" );
@@ -99,28 +132,17 @@ $wgPopupsHideOptInOnPreferencesPage = true;
 $wgPopupsReferencePreviewsBetaFeature = false;
 
 wfLoadExtension( 'FileImporter', "$ysyExtensionsPath/FileImporter/extension.json" );
+
 wfLoadExtension( 'MassMessage', "$ysyExtensionsPath/MassMessage/extension.json" );
+
 wfLoadExtension( 'Elastica', "$ysyExtensionsPath/Elastica/extension.json" );
-wfLoadExtension( 'CirrusSearch', "$ysyExtensionsPath/CirrusSearch/extension.json" );
-$wgSearchType = 'CirrusSearch';
-$wgCirrusSearchUseCompletionSuggester = 'yes';
-$wgCirrusSearchPhraseSuggestUseText = true;
-$wgCirrusSearchPhraseSuggestUseOpeningText = true;
-$wgCirrusSearchPrefixSearchStartsWithAnyWord = true;
-$wgCirrusSearchMoreLikeThisAllowedFields = [
-        'title',
-        'text',
-        'auxiliary_text',
-        'opening_text',
-        'headings',
-        'all'
-    ];
 
 wfLoadExtension( 'MediaSearch', "$ysyExtensionsPath/MediaSearch/extension.json" );
-wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
+
 wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
-wfLoadExtension( 'CodeEditor', "$ysyExtensionsPath/CodeEditor/extension.json" );
+
 wfLoadExtension( 'Linter', "$ysyExtensionsPath/Linter/extension.json" );
+
 # 为了使linter工作，使Parsoid作为扩展加载，添加接入点
 wfLoadExtension( 'Parsoid', "$IP/vendor/wikimedia/parsoid/extension.json" );
 $wgParsoidSettings = [
@@ -154,7 +176,7 @@ wfLoadExtension( 'SandboxLink', "$ysyExtensionsPath/SandboxLink/extension.json" 
 wfLoadExtension( 'TemplateStyles', "$ysyExtensionsPath/TemplateStyles/extension.json" );
 wfLoadExtension( 'TemplateStylesExtender', "$ysyExtensionsPath/TemplateStylesExtender/extension.json" );
 wfLoadExtension( 'SyntaxHighlight_GeSHi', "$ysyExtensionsPath/SyntaxHighlight_GeSHi/extension.json" );
-wfLoadExtension( 'Citoid', "$ysyExtensionsPath/Citoid/extension.json" );
+
 wfLoadExtension( 'LabeledSectionTransclusion', "$ysyExtensionsPath/LabeledSectionTransclusion/extension.json" );
 wfLoadExtension( 'RevisionSlider', "$ysyExtensionsPath/RevisionSlider/extension.json" );
 wfLoadExtension( 'EventLogging', "$ysyExtensionsPath/EventLogging/extension.json" );
@@ -188,8 +210,9 @@ wfLoadExtension( 'WikiLove', "$ysyExtensionsPath/WikiLove/extension.json" );
 $wgWikiLoveGlobal = true;
 
 wfLoadExtension( 'Thanks', "$ysyExtensionsPath/Thanks/extension.json" );
+
 wfLoadExtension( 'LabeledSectionTransclusion', "$ysyExtensionsPath/LabeledSectionTransclusion/extension.json" );
-wfLoadExtension( 'cldr', "$ysyExtensionsPath/cldr/extension.json" );
+
 wfLoadExtension( 'OAuth', "$ysyExtensionsPath/OAuth/extension.json" );
 // Oauth 秘钥
 $wgMWOAuthSecureTokenTransfer = true;
@@ -198,7 +221,7 @@ $wgOAuth2PublicKey = "/www/wwwroot/mw-utils/YsArchives-OauthKeys/public.key";
 
 wfLoadExtension( 'OrphanedTalkPages', "$ysyExtensionsPath/OrphanedTalkPages/extension.json" );
 wfLoadExtension( 'NewSignupPage', "$ysyExtensionsPath/NewSignupPage/extension.json" );
-wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
+
 wfLoadExtension( 'PageForms', "$ysyExtensionsPath/PageForms/extension.json" );
 # Page Forms 设置
 $wgPageFormsMaxLocalAutocompleteValues = 500;
@@ -283,7 +306,7 @@ wfLoadExtension( 'SemanticMetaTags', "$ysyExtensionsPath/SemanticMetaTags/extens
 # 语义维基调优
 $smwgQMaxLimit = 5000;
 $smwgQEqualitySupport = SMW_EQ_NONE;
-$smwgQueryResultCacheType = CACHE_ANYTHING;;
+$smwgQueryResultCacheType = CACHE_ANYTHING;
 $smwgQMaxSize = 10;
 $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = false;
 $smwgMaintenanceLanguage = 'zh';
