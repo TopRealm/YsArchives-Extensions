@@ -294,7 +294,7 @@ $wgDisplayFeedsInSidebar = false;
 
 // 语义维基配置及插件配置
 wfLoadExtension( 'SemanticMediaWiki', "$ysyExtensionsPath/SemanticMediaWiki/extension.json" );
-enableSemantics();
+enableSemantics('youshou.wiki');
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
     unset( $wgGroupPermissions['smwadministrator'] );
     unset( $wgGroupPermissions['smwcurator'] );
