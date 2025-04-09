@@ -1,6 +1,6 @@
 <?php
 if (!function_exists('wfLoadExtension')) {
-    function wfLoadExtension($extensionName, $path = null) {
+    function wfLoadExtension($name, $path = null) {
         // 伪定义，仅用于静态分析工具
     }
 }
@@ -72,8 +72,9 @@ wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extensio
 
 wfLoadExtension( 'ConfirmEdit', "$ysyExtensionsPath/ConfirmEdit/extension.json" );
 
-wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "$ysyExtensionsPath/ConfirmEdit/QuestyCaptcha/extension.json" );
-require_once "$ysySettingsPath/hCaptchaKeys.php";
+#wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "$ysyExtensionsPath/ConfirmEdit/QuestyCaptcha/extension.json" );
+wfLoadExtension( 'ConfirmEdit/Turnstile', "$ysyExtensionsPath/ConfirmEdit/Turnstile/extension.json" );
+require_once "$ysySettingsPath/CaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
 $wgCaptchaTriggers['create'] = true;
 $wgCaptchaTriggers['createtalk'] = true;
