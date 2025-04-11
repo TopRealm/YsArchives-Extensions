@@ -368,5 +368,5 @@ $wgTmhEnableMp4Uploads = true;
 $wgUseFFmpeg2 = false;
 
 wfLoadExtension( 'Math', "$ysyExtensionsPath/Math/extension.json" );
-$wgDefaultUserOptions['math'] = 'mathjax';
-$wgMathValidModes = ['mathjax'];
+$wgDefaultUserOptions['math'] = 'native';
+$wgMathValidModes = ['native'];
