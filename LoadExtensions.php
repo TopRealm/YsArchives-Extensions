@@ -30,7 +30,6 @@ $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
 wfLoadExtension( 'ArticleMetaDescription', "$ysyExtensionsPath/ArticleMetaDescription/extension.json" );
 
 wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
-//Avatar插件配置
 $wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
 $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
@@ -40,6 +39,9 @@ wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json
 
 // C
 wfLoadExtension( 'CategoryTree', "$ysyExtensionsPath/CategoryTree/extension.json" );
+
+wfLoadExtension( 'CheckUser', "$ysyExtensionsPath/CheckUser/extension.json" );
+$wgCheckUserEnableSpecialInvestigate = true;
 
 wfLoadExtension( 'CirrusSearch', "$ysyExtensionsPath/CirrusSearch/extension.json" );
 $wgSearchType = 'CirrusSearch';
@@ -68,6 +70,8 @@ wfLoadExtension( 'CodeEditor', "$ysyExtensionsPath/CodeEditor/extension.json" );
 
 wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
 
+wfLoadExtension( 'CollapsibleSidebar', "$ysyExtensionsPath/CollapsibleSidebar/extension.json" );
+
 wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
 
 wfLoadExtension( 'ConfirmEdit', "$ysyExtensionsPath/ConfirmEdit/extension.json" );
@@ -81,6 +85,28 @@ $wgCaptchaTriggers['createtalk'] = true;
 $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
+
+wfLoadExtension( 'ContributionScores', "$ysyExtensionsPath/ContributionScores/extension.json" );
+$wgContribScoreIgnoreBots = true;
+$wgContribScoreIgnoreBlockedUsers = false;
+$wgContribScoreIgnoreUsernames = [];
+$wgContribScoresUseRealName = false;
+
+wfLoadExtension( 'CreateUserPage', "$ysyExtensionsPath/CreateUserPage/extension.json" );
+$wgCreateUserPage_AutoCreateUser = 'New user page';
+$wgCreateUserPage_PageContent ='{{用户页}}';
+
+// D
+wfLoadExtension( 'DarkMode', "$ysyExtensionsPath/DarkMode/extension.json" );
+
+wfLoadExtension( 'Disambiguator', "$ysyExtensionsPath/Disambiguator/extension.json" );
+
+wfLoadExtension( 'DiscussionTools', "$ysyExtensionsPath/DiscussionTools/extension.json" );
+$wgDiscussionToolsEnable = true;
+$wgDiscussionToolsEnablePermalinksBackend = true;
+
+wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extension.json" );
+
 
 wfLoadExtension( 'Gadgets', "$ysyExtensionsPath/Gadgets/extension.json" );
 wfLoadExtension( 'Matomo', "$ysyExtensionsPath/Matomo/extension.json" );
@@ -170,8 +196,6 @@ $wgVirtualRestConfig = [
 ];
 
 wfLoadExtension( 'InterwikiExtracts', "$ysyExtensionsPath/InterwikiExtracts/extension.json" );
-wfLoadExtension( 'CheckUser', "$ysyExtensionsPath/CheckUser/extension.json" );
-$wgCheckUserEnableSpecialInvestigate = true;
 
 wfLoadExtension( 'SandboxLink', "$ysyExtensionsPath/SandboxLink/extension.json" );
 wfLoadExtension( 'TemplateStyles', "$ysyExtensionsPath/TemplateStyles/extension.json" );
@@ -206,7 +230,7 @@ $wgTwoColConflictUseInline = false;
 #$wgWikiSeoEnableAutoDescription = false;
 
 wfLoadExtension( 'UploadWizard', "$ysyExtensionsPath/UploadWizard/extension.json" );
-wfLoadExtension( 'Disambiguator', "$ysyExtensionsPath/Disambiguator/extension.json" );
+
 wfLoadExtension( 'WikiLove', "$ysyExtensionsPath/WikiLove/extension.json" );
 $wgWikiLoveGlobal = true;
 
@@ -244,19 +268,10 @@ wfLoadExtension( 'TabberNeue', "$ysyExtensionsPath/TabberNeue/extension.json" );
 $wgTabberNeueEnableAnimation = true;
 $wgTabberNeueUpdateLocationOnTabChange = true;
 
-wfLoadExtension( 'ContributionScores', "$ysyExtensionsPath/ContributionScores/extension.json" );
-// 贡献分数
-$wgContribScoreIgnoreBots = true;
-$wgContribScoreIgnoreBlockedUsers = false;
-$wgContribScoreIgnoreUsernames = [];
-$wgContribScoresUseRealName = false;
-
 wfLoadExtension( 'PinyinSort', "$ysyExtensionsPath/PinyinSort/extension.json" );
 // 拼音分类
 $wgCategoryCollation = 'pinyin-noprefix';
 
-wfLoadExtension( 'DarkMode', "$ysyExtensionsPath/DarkMode/extension.json" );
-wfLoadExtension( 'CollapsibleSidebar', "$ysyExtensionsPath/CollapsibleSidebar/extension.json" );
 wfLoadExtension( 'FileImporter', "$ysyExtensionsPath/FileImporter/extension.json" );
 // FileImporter
 $wgFileImporterShowInputScreen = true;
@@ -264,9 +279,6 @@ $wgFileImporterRequiredRight = 'import';
 
 wfLoadExtension( 'MultiBoilerplate', "$ysyExtensionsPath/MultiBoilerplate/extension.json" );
 wfLoadExtension( 'NewUserMessage', "$ysyExtensionsPath/NewUserMessage/extension.json" );
-wfLoadExtension( 'CreateUserPage', "$ysyExtensionsPath/CreateUserPage/extension.json" );
-$wgCreateUserPage_AutoCreateUser = 'New user page';
-$wgCreateUserPage_PageContent ='{{用户页}}';
 
 wfLoadExtension( 'Widgets', "$ysyExtensionsPath/Widgets/extension.json" );
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
@@ -318,10 +330,6 @@ wfLoadExtension( 'HeaderTabs', "$ysyExtensionsPath/HeaderTabs/extension.json" );
 
 wfLoadExtension( 'UploadsLink', "$ysyExtensionsPath/UploadsLink/extension.json" );
 
-wfLoadExtension( 'DiscussionTools', "$ysyExtensionsPath/DiscussionTools/extension.json" );
-$wgDiscussionToolsEnable = true;
-$wgDiscussionToolsEnablePermalinksBackend = true;
-
 wfLoadExtension( 'TimedMediaHandler', "$ysyExtensionsPath/TimedMediaHandler/extension.json" );
 $wgFFmpegLocation = '/usr/bin/ffmpeg';
 $wgMinimumVideoPlayerSize = 200;
@@ -359,4 +367,6 @@ $wgTmhEnableMp4Uploads = true;
 // If you use ffmpeg 2, it can be set to true
 $wgUseFFmpeg2 = false;
 
-wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extension.json" );
+wfLoadExtension( 'Math', "$ysyExtensionsPath/Math/extension.json" );
+$wgDefaultUserOptions['math'] = 'mathjax';
+$wgMathValidModes = ['mathjax'];

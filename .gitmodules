@@ -385,3 +385,7 @@
 [submodule "ArticleMetaDescription"]
 	path = ArticleMetaDescription
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ArticleMetaDescription.git
+[submodule "Math"]
+	path = Math
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Math
+	branch = REL1_43
