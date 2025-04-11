@@ -310,7 +310,6 @@ $smwgQEqualitySupport = SMW_EQ_NONE;
 $smwgQueryResultCacheType = CACHE_ANYTHING;
 $smwgQMaxSize = 10;
 $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = false;
-$smwgMaintenanceLanguage = 'zh';
 
 // NewUserMessage
 wfLoadExtension( 'NewUserMessage', "$ysyExtensionsPath/NewUserMessage/extension.json" );
