@@ -1,7 +1,7 @@
 [submodule "AJAXPoll"]
 	path = AJAXPoll
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-AJAXPoll
-	branch = REL1_43
+	branch = master
 [submodule "AbuseFilter"]
 	path = AbuseFilter
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-AbuseFilter.git
