@@ -34,6 +34,9 @@ $wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
 $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
 
+wfLoadExtension( 'AWS', "$ysyExtensionsPath/AWS/extension.json" );
+require_once "$ysySettingsPath/AWSSettings.php";
+
 // B
 wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json" );
 
