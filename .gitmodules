@@ -190,10 +190,6 @@
 	path = PdfHandler
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-PdfHandler
 	branch = REL1_43
-[submodule "PinyinSort"]
-	path = PinyinSort
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-PinyinSort
-	branch = master
 [submodule "Poem"]
 	path = Poem
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Poem
