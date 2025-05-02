@@ -388,3 +388,6 @@
 [submodule "AWS"]
 	path = AWS
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-AWS
+[submodule "PinyinSort"]
+	path = PinyinSort
+	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-PinyinSort
