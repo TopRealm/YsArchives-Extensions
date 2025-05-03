@@ -33,6 +33,7 @@ wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
 $wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
 $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
+require_once "$ysySettingsPath/AvatarS3Settings.php";
 
 wfLoadExtension( 'AWS', "$ysyExtensionsPath/AWS/extension.json" );
 require_once "$ysySettingsPath/AWSSettings.php";
