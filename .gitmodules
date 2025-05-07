@@ -391,3 +391,6 @@
 [submodule "PinyinSort"]
 	path = PinyinSort
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-PinyinSort
+[submodule "ShortDescription"]
+	path = ShortDescription
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ShortDescription
