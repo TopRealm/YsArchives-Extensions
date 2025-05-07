@@ -127,6 +127,7 @@ wfLoadExtension( 'OATHAuth', "$ysyExtensionsPath/OATHAuth/extension.json" );
 wfLoadExtension( 'WebAuthn', "$ysyExtensionsPath/WebAuthn/extension.json" );
 wfLoadExtension( 'PageImages', "$ysyExtensionsPath/PageImages/extension.json" );
 $wgPageImagesExpandOpenSearchXml = true;
+$wgPageImagesNamespaces = [ NS_MAIN, NS_FANMADE ];
 
 wfLoadExtension( 'ParserFunctions', "$ysyExtensionsPath/ParserFunctions/extension.json" );
 wfLoadExtension( 'PdfHandler', "$ysyExtensionsPath/PdfHandler/extension.json" );
