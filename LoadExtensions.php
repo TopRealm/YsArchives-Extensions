@@ -138,6 +138,28 @@ wfLoadExtension( 'SecureLinkFixer', "$ysyExtensionsPath/SecureLinkFixer/extensio
 wfLoadExtension( 'SpamBlacklist', "$ysyExtensionsPath/SpamBlacklist/extension.json" );
 wfLoadExtension( 'TemplateData', "$ysyExtensionsPath/TemplateData/extension.json" );
 wfLoadExtension( 'TextExtracts', "$ysyExtensionsPath/TextExtracts/extension.json" );
+$wgExtractsRemoveClasses = [
+    'table',
+    'div',
+    'figure',
+    'script',
+    'input',
+    'style',
+    'ul.gallery',
+    '.mw-editsection',
+    'sup.reference',
+    'ol.references',
+    '.error',
+    '.nomobile',
+    '.noprint',
+    '.noexcerpt',
+    '.sortkey',
+    '.metadata',
+    'span.coordinates',
+    'span.geo-multi-punct',
+    'span.geo-nondefault',
+    '#coordinates',
+];
 wfLoadExtension( 'TitleBlacklist', "$ysyExtensionsPath/TitleBlacklist/extension.json" );
 wfLoadExtension( 'VisualEditor', "$ysyExtensionsPath/VisualEditor/extension.json" );
 $wgVisualEditorEnableBetaFeature = true;
