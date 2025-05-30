@@ -120,6 +120,8 @@ wfLoadExtension( 'Echo', "$ysyExtensionsPath/Echo/extension.json" );
 /// Echo增强设置
 $wgEchoEmailFooterAddress = '有兽档案馆，开放的有兽焉wiki';
 
+wfLoadExtension( 'EmailAuth', "$ysyExtensionsPath/EmailAuth/extension.json" );
+
 #wfLoadExtension( 'EmbedVideo', "$ysyExtensionsPath/EmbedVideo/extension.json" );
 
 wfLoadExtension( 'EventLogging', "$ysyExtensionsPath/EventLogging/extension.json" );

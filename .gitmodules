@@ -394,3 +394,7 @@
 [submodule "ShortDescription"]
 	path = ShortDescription
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ShortDescription
+[submodule "EmailAuth"]
+	path = EmailAuth
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-EmailAuth
+	branch = REL1_43
