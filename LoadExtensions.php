@@ -30,7 +30,7 @@ $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
 wfLoadExtension( 'ArticleMetaDescription', "$ysyExtensionsPath/ArticleMetaDescription/extension.json" );
 
 wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
-$wgDefaultAvatar = 'https://youshou.wiki/images/avatars/default/default.gif';
+$wgDefaultAvatar = 'https://image.youshou.wiki/avatars/default/default.gif';
 $wgMaxAvatarResolution = 512;
 $wgDefaultAvatarRes = 256;
 $wgAvatarEnableS3  = true;
