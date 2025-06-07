@@ -79,6 +79,9 @@ wfLoadExtension( 'CodeMirror', "$ysyExtensionsPath/CodeMirror/extension.json" );
 wfLoadExtension( 'CollapsibleSidebar', "$ysyExtensionsPath/CollapsibleSidebar/extension.json" );
 
 wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.json" );
+$wgCommentStreamsModeratorFastDelete = true;
+$wgCommentStreamsEnableVoting = true;
+$wgCommentStreamsSuppressLogsFromRCs = false;
 
 wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
 
