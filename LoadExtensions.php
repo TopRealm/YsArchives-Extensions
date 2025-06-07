@@ -82,6 +82,7 @@ wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.
 $wgCommentStreamsModeratorFastDelete = true;
 $wgCommentStreamsEnableVoting = true;
 $wgCommentStreamsSuppressLogsFromRCs = false;
+$wgCommentStreamsAllowedNamespaces = [ '0', '2', '300' ];
 
 wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
 
