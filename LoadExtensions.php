@@ -83,6 +83,7 @@ $wgCommentStreamsModeratorFastDelete = true;
 $wgCommentStreamsEnableVoting = true;
 $wgCommentStreamsSuppressLogsFromRCs = false;
 $wgCommentStreamsAllowedNamespaces = [ '0', '2', '300' ];
+$wgCommentStreamsTimeFormat = 'Y年m月d日 H:i';
 
 wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extension.json" );
 
