@@ -378,7 +378,7 @@
 [submodule "CommentStreams"]
 	path = CommentStreams
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CommentStreams
-	branch = REL1_43
+	branch = master
 [submodule "ArticleMetaDescription"]
 	path = ArticleMetaDescription
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ArticleMetaDescription.git
