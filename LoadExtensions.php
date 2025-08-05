@@ -113,6 +113,8 @@ $wgCreateUserPage_PageContent ='{{用户页}}';
 // D
 wfLoadExtension( 'DarkMode', "$ysyExtensionsPath/DarkMode/extension.json" );
 
+wfLoadExtension( 'DisableAccount', "$ysyExtensionsPath/DisableAccount/extension.json" );
+
 wfLoadExtension( 'Disambiguator', "$ysyExtensionsPath/Disambiguator/extension.json" );
 
 wfLoadExtension( 'DiscussionTools', "$ysyExtensionsPath/DiscussionTools/extension.json" );
