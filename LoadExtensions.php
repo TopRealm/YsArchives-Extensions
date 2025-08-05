@@ -459,3 +459,6 @@ $wgWikiLoveGlobal = true;
 # SEO配置
 #$wgWikiSeoDefaultLanguage = 'zh';
 #$wgWikiSeoEnableAutoDescription = false;
+
+// Y 
+wfLoadExtension( 'YsArchivesMessages', "$ysyExtensionsPath/YsArchivesMessages/extension.json" );

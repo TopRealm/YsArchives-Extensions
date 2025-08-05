@@ -402,3 +402,7 @@
 	path = SearchVue
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-SearchVue
 	branch = REL1_43
+[submodule "YsArchivesMessages"]
+	path = YsArchivesMessages
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-YsArchivesMessages
+	branch = REL1_43
