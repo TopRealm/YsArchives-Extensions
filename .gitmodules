@@ -350,10 +350,6 @@
 	path = UploadsLink
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-UploadsLink
 	branch = REL1_43
-[submodule "SearchVue"]
-	path = SearchVue
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-SearchVue.git
-	branch = REL1_43
 [submodule "DiscussionTools"]
 	path = DiscussionTools
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-DiscussionTools.git
@@ -394,7 +390,7 @@
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-PinyinSort
 [submodule "ShortDescription"]
 	path = ShortDescription
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ShortDescription
+	url = https://gift.qiuwen.net.cn/Mirror/mediawiki-extensions-ShortDescription
 [submodule "EmailAuth"]
 	path = EmailAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-EmailAuth
