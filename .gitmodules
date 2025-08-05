@@ -398,3 +398,7 @@
 [submodule "DisableAccount"]
 	path = DisableAccount
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-DisableAccount
+[submodule "SearchVue"]
+	path = SearchVue
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-SearchVue
+	branch = REL1_43
