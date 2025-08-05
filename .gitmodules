@@ -399,3 +399,6 @@
 	path = EmailAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-EmailAuth
 	branch = REL1_43
+[submodule "DisableAccount"]
+	path = DisableAccount
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-DisableAccount
