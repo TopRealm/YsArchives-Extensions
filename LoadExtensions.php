@@ -303,6 +303,8 @@ $wgScribuntoDefaultEngine = 'luasandbox';
 $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
 
+wfLoadExtension( 'SearchVue', "$ysyExtensionsPath/SearchVue/extension.json" );
+
 wfLoadExtension( 'SecureLinkFixer', "$ysyExtensionsPath/SecureLinkFixer/extension.json" );
 
 wfLoadExtension( 'SemanticMediaWiki', "$ysyExtensionsPath/SemanticMediaWiki/extension.json" );
