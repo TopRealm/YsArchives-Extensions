@@ -413,7 +413,7 @@
 [submodule "SimpleTooltip"]
 	path = SimpleTooltip
 	url = https://git.qiuwen.net.cn/Mirror/SimpleTooltip
-[submodule "mediawiki-extensions-VEForAll"]
-	path = mediawiki-extensions-VEForAll
+[submodule "VEForAll"]
+	path = VEForAll
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-VEForAll
 	branch = REL1_43
