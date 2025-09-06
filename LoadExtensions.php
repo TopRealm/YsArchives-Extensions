@@ -10,6 +10,8 @@ $ysyExtensionsPath = "/www/wwwroot/mw-utils/YsArchives-Extensions";
 $ysySettingsPath = "/www/wwwroot/mw-utils/YsArchives-Settings";
 
 // A
+wfLoadExtension( 'AccountInfo', "$ysyExtensionsPath/AccountInfo/extension.json" );
+
 wfLoadExtension( 'AbuseFilter', "$ysyExtensionsPath/AbuseFilter/extension.json" );
 $wgAbuseFilterEnableBlockedExternalDomain = true;
 

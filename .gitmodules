@@ -406,3 +406,7 @@
 	path = YsArchivesMessages
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-YsArchivesMessages
 	branch = REL1_43
+[submodule "AccountInfo"]
+	path = AccountInfo
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-AccountInfo
+	branch = REL1_43
