@@ -427,6 +427,8 @@ wfLoadExtension( 'UserMerge', "$ysyExtensionsPath/UserMerge/extension.json" );
 $wgUserMergeProtectedGroups = [ 'sysop', 'steward' ];
 
 // V
+wfLoadExtension( 'VEForAll', "$ysyExtensionsPath/VEForAll/extension.json" );
+
 wfLoadExtension( 'VisualEditor', "$ysyExtensionsPath/VisualEditor/extension.json" );
 $wgVisualEditorEnableBetaFeature = true;
 $wgVisualEditorEnableDiffPageBetaFeature = true;
