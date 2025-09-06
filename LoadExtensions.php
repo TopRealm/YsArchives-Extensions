@@ -333,6 +333,8 @@ wfLoadExtension( 'SemanticMetaTags', "$ysyExtensionsPath/SemanticMetaTags/extens
 
 wfLoadExtension( 'ShortDescription', "$ysyExtensionsPath/ShortDescription/extension.json" );
 
+wfLoadExtension( 'SimpleTooltip', "$ysyExtensionsPath/SimpleTooltip/extension.json" );
+
 wfLoadExtension( 'SpamBlacklist', "$ysyExtensionsPath/SpamBlacklist/extension.json" );
 
 wfLoadExtension( 'SyntaxHighlight_GeSHi', "$ysyExtensionsPath/SyntaxHighlight_GeSHi/extension.json" );

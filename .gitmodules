@@ -410,3 +410,6 @@
 	path = AccountInfo
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-AccountInfo
 	branch = REL1_43
+[submodule "SimpleTooltip"]
+	path = SimpleTooltip
+	url = https://git.qiuwen.net.cn/Mirror/SimpleTooltip
