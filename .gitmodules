@@ -298,6 +298,7 @@
 [submodule "Widgets"]
 	path = Widgets
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-Widgets
+	branch = REL1_43
 [submodule "SemanticMediaWiki"]
 	path = SemanticMediaWiki
 	url = https://git.qiuwen.net.cn/YSARXIV/SemanticMediaWiki
