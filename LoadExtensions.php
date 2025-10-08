@@ -108,6 +108,10 @@ $wgContribScoreIgnoreBlockedUsers = false;
 $wgContribScoreIgnoreUsernames = [];
 $wgContribScoresUseRealName = false;
 
+wfLoadExtension( 'CookieWarning', "$ysyExtensionsPath/CookieWarning/extension.json" );
+$wgCookieWarningEnabled = true;
+$wgCookieWarningGeoIPLookup = 'js';
+
 wfLoadExtension( 'CreateUserPage', "$ysyExtensionsPath/CreateUserPage/extension.json" );
 $wgCreateUserPage_AutoCreateUser = 'New user page';
 $wgCreateUserPage_PageContent ='{{用户页}}';
