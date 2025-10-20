@@ -48,6 +48,7 @@ wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json
 wfLoadExtension( 'CategoryTree', "$ysyExtensionsPath/CategoryTree/extension.json" );
 
 wfLoadExtension( 'Chart', "$ysyExtensionsPath/Chart/extension.json" );
+$wgChartServiceUrl = 'https://chart-renderer.qiuwen.net.cn/v1/chart/render';
 
 wfLoadExtension( 'CheckUser', "$ysyExtensionsPath/CheckUser/extension.json" );
 $wgCheckUserEnableSpecialInvestigate = true;
