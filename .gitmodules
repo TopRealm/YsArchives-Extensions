@@ -421,3 +421,11 @@
 	path = CookieWarning
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-CookieWarning
 	branch = REL1_43
+[submodule "JsonConfig"]
+	path = JsonConfig
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-JsonConfig
+	branch = REL1_43
+[submodule "Chart"]
+	path = Chart
+	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-Chart
+	branch = REL1_43

@@ -47,6 +47,8 @@ wfLoadExtension( 'BetaFeatures', "$ysyExtensionsPath/BetaFeatures/extension.json
 // C
 wfLoadExtension( 'CategoryTree', "$ysyExtensionsPath/CategoryTree/extension.json" );
 
+wfLoadExtension( 'Chart', "$ysyExtensionsPath/Chart/extension.json" );
+
 wfLoadExtension( 'CheckUser', "$ysyExtensionsPath/CheckUser/extension.json" );
 $wgCheckUserEnableSpecialInvestigate = true;
 
@@ -183,6 +185,7 @@ wfLoadExtension( 'Interwiki', "$ysyExtensionsPath/Interwiki/extension.json" );
 wfLoadExtension( 'InterwikiExtracts', "$ysyExtensionsPath/InterwikiExtracts/extension.json" );
 
 // J
+wfLoadExtension( 'JsonConfig', "$ysyExtensionsPath/JsonConfig/extension.json" );
 
 // K
 
