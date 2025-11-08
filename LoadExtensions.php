@@ -87,7 +87,7 @@ wfLoadExtension( 'CommentStreams', "$ysyExtensionsPath/CommentStreams/extension.
 $wgCommentStreamsModeratorFastDelete = true;
 $wgCommentStreamsEnableVoting = true;
 $wgCommentStreamsSuppressLogsFromRCs = false;
-$wgCommentStreamsAllowedNamespaces = [ '0', '2', '300' ];
+$wgCommentStreamsAllowedNamespaces = [ 0, 2, 300 ];
 $wgCommentStreamsTimeFormat = 'Y年m月d日 H:i';
 $wgCommentStreamsEnableSearch = false;
 
@@ -395,7 +395,7 @@ $wgEnableTranscode = true;
 $wgJobTypesExcludedFromDefaultQueue[] = 'webVideoTranscode';
 $wgJobTypesExcludedFromDefaultQueue[] = 'webVideoTranscodePrioritized';
 $wgTranscodeBackgroundTimeLimit = 3600 * 8;
-$wgTranscodeBackgroundMemoryLimit = 1 * 1024 * 1024; // 2GB avconv, ffmpeg2theora mmap resources so virtual memory needs to be high enough
+$wgTranscodeBackgroundMemoryLimit = 2 * 1024 * 1024 * 1024; // 2GB avconv, ffmpeg2theora mmap resources so virtual memory needs to be high enough
 $wgTranscodeBackgroundSizeLimit = 4 * 1024 * 1024; // 4GB
 $wgFFmpegThreads = 1;
 $wgTimedTextNS = 710;
@@ -409,10 +409,10 @@ $wgEnabledTranscodeSet = [
     '1080p.webm' => true,
 ];
 $wgEnabledAudioTranscodeSet = [
-	'ogg' => true,   // ogg+vorbis
-	'opus' => false, // ogg+opus
-	'mp3' => true,   // raw mp3
-	'm4a' => true,  // mp4+aac (mp4a.40.5)
+    'ogg' => true,    // ogg+vorbis
+    'opus' => false,  // ogg+opus
+    'mp3' => true,    // raw mp3
+    'm4a' => true,    // mp4+aac (mp4a.40.5)
 ];
 // If mp3 source assets can be ingested:
 $wgTmhEnableMp3Uploads = true;
@@ -459,11 +459,13 @@ wfLoadExtension( 'WebAuthn', "$ysyExtensionsPath/WebAuthn/extension.json" );
 
 wfLoadExtension( 'Widgets', "$ysyExtensionsPath/Widgets/extension.json" );
 $wgExtensionFunctions[] = function() use ( &$wgGroupPermissions ) {
-    unset( $wgGroupPermissions['widgeteditor'] );
+    // 移除 widgeteditor 权限，防止普通用户编辑 Widgets，提升安全性
+        unset( $wgGroupPermissions['widgeteditor'] );
 };
 
 wfLoadExtension( 'WikiEditor', "$ysyExtensionsPath/WikiEditor/extension.json" );
-$wgWikiEditorRealtimePreview = true;
+// 启用WikiEditor扩展提供的Beta工具栏（新版编辑工具栏），提升编辑体验
+$wgDefaultUserOptions['usebetatoolbar'] = 1; // user option provided by WikiEditor extension
 $wgDefaultUserOptions['usebetatoolbar'] = 1; // user option provided by WikiEditor extension
 
 wfLoadExtension( 'WikiLove', "$ysyExtensionsPath/WikiLove/extension.json" );
@@ -474,5 +476,5 @@ $wgWikiLoveGlobal = true;
 #$wgWikiSeoDefaultLanguage = 'zh';
 #$wgWikiSeoEnableAutoDescription = false;
 
-// Y 
+// Y
 wfLoadExtension( 'YsArchivesMessages', "$ysyExtensionsPath/YsArchivesMessages/extension.json" );
