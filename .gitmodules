@@ -429,3 +429,6 @@
 	path = Chart
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-Chart
 	branch = REL1_43
+[submodule "Wanda"]
+	path = Wanda
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Wanda
