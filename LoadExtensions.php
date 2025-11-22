@@ -455,26 +455,6 @@ $wgVisualEditorDisableForAnons = true;
 $wgVisualEditorSerializationCacheTimeout = 30;
 
 // W
-wfLoadExtension( 'Wanda' , "$ysyExtensionsPath/Wanda/extension.json" );
-require_once "$ysySettingsPath/WandaSettings.php";
-$wgWandaLLMModel = 'qwen3-max';
-$wgWandaLLMApiEndpoint = 'https://dashscope.aliyuncs.com/compatible-mode/v1';
-$wgWandaLLMElasticsearchUrl = 'http://elasticsearch:9200';
-// UI and interface settings
-$wgWandaShowPopup = true; // Show/hide the floating chat widget on all pages
-// Custom prompt settings
-$wgWandaCustomPrompt = ''; // Custom prompt template to override default behavior
-$wgWandaCustomPromptTitle = ''; // Wiki page title containing custom prompt template
-// LLM behavior settings
-$wgWandaLLMMaxTokens = 10000; // Maximum tokens in LLM responses
-$wgWandaLLMTemperature = '0.7'; // Creativity/randomness setting (0.0-1.0)
-$wgWandaLLMTimeout = 30; // Request timeout in seconds for LLM calls
-// Indexing settings
-$wgWandaAutoReindex = true; // Automatically reindex content after update.php
-$wgWandaSkipESQuery = false; // Skip Elastic Search
-$wgWandaMaxImageSize = 5242880; // Maximum size allowed for an image
-$wgWandaMaxImageCount = 10; // Maximum number of images that can be attached with the single request
-
 wfLoadExtension( 'WebAuthn', "$ysyExtensionsPath/WebAuthn/extension.json" );
 
 wfLoadExtension( 'Widgets', "$ysyExtensionsPath/Widgets/extension.json" );
