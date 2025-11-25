@@ -258,9 +258,6 @@
 	path = cldr
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-cldr
 	branch = master
-[submodule "PWA"]
-	path = PWA
-	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-PWA
 [submodule "NewUserMessage"]
 	path = NewUserMessage
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-NewUserMessage
