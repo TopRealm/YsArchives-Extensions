@@ -115,6 +115,10 @@ wfLoadExtension( 'CookieWarning', "$ysyExtensionsPath/CookieWarning/extension.js
 $wgCookieWarningEnabled = true;
 $wgCookieWarningGeoIPLookup = 'js';
 
+wfLoadExtension( 'CountDownClock', "$ysyExtensionsPath/CountDownClock/extension.json" );
+
+wfLoadExtension( 'CreatedPagesList', "$ysyExtensionsPath/CreatedPagesList/extension.json" );
+
 wfLoadExtension( 'CreateUserPage', "$ysyExtensionsPath/CreateUserPage/extension.json" );
 $wgCreateUserPage_AutoCreateUser = 'New user page';
 $wgCreateUserPage_PageContent ='{{用户页}}';

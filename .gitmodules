@@ -432,3 +432,9 @@
 [submodule "Wanda"]
 	path = Wanda
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Wanda
+[submodule "CreatedPagesList"]
+	path = CreatedPagesList
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CreatedPagesList
+[submodule "CountDownClock"]
+	path = CountDownClock
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CountDownClock
