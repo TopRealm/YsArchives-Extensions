@@ -107,7 +107,7 @@ $wgCaptchaTriggers['badlogin'] = true;
 
 wfLoadExtension( 'ContributionScores', "$ysyExtensionsPath/ContributionScores/extension.json" );
 $wgContribScoreIgnoreBots = true;
-$wgContribScoreIgnoreBlockedUsers = true·;
+$wgContribScoreIgnoreBlockedUsers = true;
 $wgContribScoreIgnoreUsernames = [];
 $wgContribScoresUseRealName = false;
 
