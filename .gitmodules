@@ -435,3 +435,6 @@
 [submodule "CountDownClock"]
 	path = CountDownClock
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CountDownClock
+[submodule "Thumbro"]
+	path = Thumbro
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Thumbro

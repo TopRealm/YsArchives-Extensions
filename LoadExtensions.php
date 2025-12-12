@@ -356,6 +356,8 @@ wfLoadExtension( 'TabberNeue', "$ysyExtensionsPath/TabberNeue/extension.json" );
 $wgTabberNeueEnableAnimation = true;
 $wgTabberNeueUpdateLocationOnTabChange = true;
 
+wfLoadExtension( 'Thumbro' , "$ysyExtensionsPath/Thumbro/extension.json" );
+
 wfLoadExtension( 'TemplateData', "$ysyExtensionsPath/TemplateData/extension.json" );
 
 wfLoadExtension( 'TemplateSandbox', "$ysyExtensionsPath/TemplateSandbox/extension.json" );
