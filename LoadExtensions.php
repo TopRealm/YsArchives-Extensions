@@ -357,6 +357,7 @@ $wgTabberNeueEnableAnimation = true;
 $wgTabberNeueUpdateLocationOnTabChange = true;
 
 wfLoadExtension( 'Thumbro' , "$ysyExtensionsPath/Thumbro/extension.json" );
+$wgThumbroExposeTestPage = true;
 
 wfLoadExtension( 'TemplateData', "$ysyExtensionsPath/TemplateData/extension.json" );
 
