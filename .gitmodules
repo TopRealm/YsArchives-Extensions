@@ -438,3 +438,6 @@
 [submodule "Thumbro"]
 	path = Thumbro
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Thumbro
+[submodule "MyVariables"]
+	path = MyVariables
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MyVariables

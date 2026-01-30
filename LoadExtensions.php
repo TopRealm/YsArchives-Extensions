@@ -217,6 +217,7 @@ wfLoadExtension( 'MassMessage', "$ysyExtensionsPath/MassMessage/extension.json" 
 wfLoadExtension( 'MassEditRegex', "$ysyExtensionsPath/MassEditRegex/extension.json" );
 
 wfLoadExtension( 'Math', "$ysyExtensionsPath/Math/extension.json" );
+wfLoadExtension( 'MyVariables', "$ysyExtensionsPath/MyVariables/extension.json" );
 // Math
 $wgDefaultUserOptions['math'] = 'mathjax';
 $wgMathValidModes = ['mathjax'];
