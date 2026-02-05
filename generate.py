@@ -35,7 +35,9 @@ with open('add-modules.bat', 'w') as file:
                 branch = line.split('=')[1].strip()
         
         # 生成子模块添加命令
-        command = 'git submodule add'
+        # 添加 User-Agent (使用仓库特定标识 + Qiuwen/1.1)
+        ua = 'YsArchives-Extensions/1.0 (TopRealm; https://github.com/TopRealm/YsArchives-Extensions) Qiuwen/1.1'
+        command = f'git -c "http.userAgent={ua}" submodule add'
         if branch:
             command += f' -b {branch}'
         command += f' {url} {path}'
@@ -44,7 +46,7 @@ with open('add-modules.bat', 'w') as file:
         
         # 将命令写入add-modules.bat文件
         file.write(command + '\n')
-        file.write('timeout /t 3 /nobreak > NUL\n')  # 添加3秒延迟
+        file.write('timeout /t 1 /nobreak > NUL\n')  # 添加3秒延迟
         
         print("模块命令生成成功")
         time.sleep(3)  # 间隔3秒防止控制台拥堵

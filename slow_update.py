@@ -4,7 +4,7 @@ import sys
 import os
 
 # 默认延迟时间（秒）
-DEFAULT_DELAY = 10
+DEFAULT_DELAY = 1
 
 def get_submodules():
     """获取所有子模块的路径列表"""
@@ -40,7 +40,9 @@ def update_submodules(delay):
             # 执行 git submodule update --remote <path>
             # 这里添加了 --init 以防模块未初始化
             # 如果不需要初始化，可以去掉 --init
-            cmd = ["git", "submodule", "update", "--init", "--remote", path]
+            # 添加 User-Agent (使用仓库特定标识 + Qiuwen/1.1)
+            ua = "YsArchives-Extensions/1.0 (TopRealm; https://github.com/TopRealm/YsArchives-Extensions) Qiuwen/1.1"
+            cmd = ["git", "-c", f"http.userAgent={ua}", "submodule", "update", "--init", "--remote", path]
             subprocess.check_call(cmd)
             print(f"Successfully updated {path}")
             success_count += 1
