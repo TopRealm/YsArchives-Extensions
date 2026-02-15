@@ -134,7 +134,7 @@ wfLoadExtension( 'DiscussionTools', "$ysyExtensionsPath/DiscussionTools/extensio
 $wgDiscussionToolsEnable = true;
 $wgDiscussionToolsEnablePermalinksBackend = true;
 
-wfLoadExtension( 'DynamicPageList3', "$ysyExtensionsPath/DynamicPageList3/extension.json" );
+wfLoadExtension( 'DynamicPageList4', "$ysyExtensionsPath/DynamicPageList4/extension.json" );
 
 // E
 wfLoadExtension( 'Elastica', "$ysyExtensionsPath/Elastica/extension.json" );

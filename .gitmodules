@@ -355,9 +355,6 @@
 	path = TimedMediaHandler
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-TimedMediaHandler.git
 	branch = REL1_43
-[submodule "DynamicPageList3"]
-	path = DynamicPageList3
-	url = https://git.qiuwen.net.cn/Mirror/DynamicPageList3.git
 [submodule "CentralAuth"]
 	path = CentralAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-CentralAuth
@@ -440,3 +437,7 @@
 [submodule "VEForAll"]
 	path = VEForAll
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-VEForAll
+[submodule "DynamicPageList4"]
+	path = DynamicPageList4
+	url = https://git.qiuwen.net.cn/Mirror/DynamicPageList4
+	branch = REL1_43
