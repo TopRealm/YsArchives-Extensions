@@ -437,3 +437,6 @@
 [submodule "MyVariables"]
 	path = MyVariables
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-MyVariables
+[submodule "VEForAll"]
+	path = VEForAll
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-VEForAll
