@@ -410,10 +410,6 @@
 [submodule "SimpleTooltip"]
 	path = SimpleTooltip
 	url = https://git.qiuwen.net.cn/Mirror/SimpleTooltip
-[submodule "VEForAll"]
-	path = VEForAll
-	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-VEForAll
-	branch = REL1_43
 [submodule "CookieWarning"]
 	path = CookieWarning
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-CookieWarning
