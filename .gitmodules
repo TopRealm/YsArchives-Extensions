@@ -444,3 +444,4 @@
 [submodule "AISEOMeta"]
 	path = AISEOMeta
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-AISEOMeta
+	branch = main
