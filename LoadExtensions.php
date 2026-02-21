@@ -22,8 +22,8 @@ $wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
 
-wfLoadExtension( 'AISEOMeta', "$ysyExtensionsPath/AISEOMeta/extension.json" );
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/ASMSettings.php";
+#wfLoadExtension( 'AISEOMeta', "$ysyExtensionsPath/AISEOMeta/extension.json" );
+#require_once "/www/wwwroot/mw-utils/YsArchives-Settings/ASMSettings.php";
 
 wfLoadExtension( 'AJAXPoll', "$ysyExtensionsPath/AJAXPoll/extension.json" );
 
@@ -31,6 +31,8 @@ wfLoadExtension( 'AntiSpoof', "$ysyExtensionsPath/AntiSpoof/extension.json" );
 
 wfLoadExtension( 'ArticleCreationWorkflow', "$ysyExtensionsPath/ArticleCreationWorkflow/extension.json" );
 $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
+
+wfLoadExtension( 'ArticleMetaDescription', "$ysyExtensionsPath/ArticleMetaDescription/extension.json" );
 
 wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
 $wgDefaultAvatar = 'https://image.youshou.wiki/avatars/default/default.gif';
