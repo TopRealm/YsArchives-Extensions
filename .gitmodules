@@ -443,4 +443,4 @@
 	branch = REL1_43
 [submodule "AISEOMeta"]
 	path = AISEOMeta
-	url = https://github.com/TopRealm/mediawiki-extensions-AISEOMeta
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-AISEOMeta
