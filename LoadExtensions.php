@@ -22,14 +22,15 @@ $wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
 
+wfLoadExtension( 'AISEOMeta', "$ysyExtensionsPath/AISEOMeta/extension.json" );
+require_once "/www/wwwroot/mw-utils/YsArchives-Settings/ASMSettings.php";
+
 wfLoadExtension( 'AJAXPoll', "$ysyExtensionsPath/AJAXPoll/extension.json" );
 
 wfLoadExtension( 'AntiSpoof', "$ysyExtensionsPath/AntiSpoof/extension.json" );
 
 wfLoadExtension( 'ArticleCreationWorkflow', "$ysyExtensionsPath/ArticleCreationWorkflow/extension.json" );
 $wgArticleCreationLandingPage = '有兽档案馆:条目创建向导/navigate';
-
-wfLoadExtension( 'ArticleMetaDescription', "$ysyExtensionsPath/ArticleMetaDescription/extension.json" );
 
 wfLoadExtension( 'Avatar', "$ysyExtensionsPath/Avatar/extension.json" );
 $wgDefaultAvatar = 'https://image.youshou.wiki/avatars/default/default.gif';
@@ -212,12 +213,11 @@ wfLoadExtension( 'Matomo', "$ysyExtensionsPath/Matomo/extension.json" );
 /// Matomo访问信息收集
 require_once "$ysySettingsPath/MatomoSettings.php";
 
-wfLoadExtension( 'MassMessage', "$ysyExtensionsPath/MassMessage/extension.json" );
-
 wfLoadExtension( 'MassEditRegex', "$ysyExtensionsPath/MassEditRegex/extension.json" );
 
+wfLoadExtension( 'MassMessage', "$ysyExtensionsPath/MassMessage/extension.json" );
+
 wfLoadExtension( 'Math', "$ysyExtensionsPath/Math/extension.json" );
-wfLoadExtension( 'MyVariables', "$ysyExtensionsPath/MyVariables/extension.json" );
 // Math
 $wgDefaultUserOptions['math'] = 'mathjax';
 $wgMathValidModes = ['mathjax'];
@@ -227,6 +227,8 @@ wfLoadExtension( 'MediaSearch', "$ysyExtensionsPath/MediaSearch/extension.json" 
 wfLoadExtension( 'MultiBoilerplate', "$ysyExtensionsPath/MultiBoilerplate/extension.json" );
 
 wfLoadExtension( 'MultimediaViewer', "$ysyExtensionsPath/MultimediaViewer/extension.json" );
+
+wfLoadExtension( 'MyVariables', "$ysyExtensionsPath/MyVariables/extension.json" );
 
 // N
 #wfLoadExtension( 'NativeSvgHandler', "$ysyExtensionsPath/NativeSvgHandler/extension.json" );
