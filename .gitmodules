@@ -384,7 +384,7 @@
 	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-PinyinSort
 [submodule "ShortDescription"]
 	path = ShortDescription
-	url = https://gift.qiuwen.net.cn/Mirror/mediawiki-extensions-ShortDescription
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-ShortDescription
 [submodule "EmailAuth"]
 	path = EmailAuth
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-EmailAuth
