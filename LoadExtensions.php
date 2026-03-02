@@ -98,8 +98,6 @@ wfLoadExtension( 'CommonsMetadata', "$ysyExtensionsPath/CommonsMetadata/extensio
 
 wfLoadExtension( 'ConfirmEdit', "$ysyExtensionsPath/ConfirmEdit/extension.json" );
 
-#wfLoadExtension( 'ConfirmEdit/QuestyCaptcha', "$ysyExtensionsPath/ConfirmEdit/QuestyCaptcha/extension.json" );
-wfLoadExtension( 'ConfirmEdit/Turnstile', "$ysyExtensionsPath/ConfirmEdit/Turnstile/extension.json" );
 require_once "$ysySettingsPath/CaptchaKeys.php";
 $wgCaptchaTriggers['edit'] = true;
 $wgCaptchaTriggers['create'] = true;
