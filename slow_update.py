@@ -4,7 +4,7 @@ import sys
 import os
 
 # 默认延迟时间（秒）
-DEFAULT_DELAY = 1
+DEFAULT_DELAY = 0.5
 
 def get_submodules():
     """获取所有子模块的路径列表"""
