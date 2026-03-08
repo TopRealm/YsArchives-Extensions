@@ -156,8 +156,8 @@
 	branch = REL1_43
 [submodule "NewSignupPage"]
 	path = NewSignupPage
-	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-NewSignupPage
-	branch = REL1_43
+	url = https://git.qiuwen.net.cn/Fork/mediawiki-extensions-NewSignupPage
+	branch = master
 [submodule "Nuke"]
 	path = Nuke
 	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-Nuke
