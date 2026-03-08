@@ -22,9 +22,6 @@ $wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
 
-#wfLoadExtension( 'AISEOMeta', "$ysyExtensionsPath/AISEOMeta/extension.json" );
-#require_once "/www/wwwroot/mw-utils/YsArchives-Settings/ASMSettings.php";
-
 wfLoadExtension( 'AJAXPoll', "$ysyExtensionsPath/AJAXPoll/extension.json" );
 
 wfLoadExtension( 'AntiSpoof', "$ysyExtensionsPath/AntiSpoof/extension.json" );
@@ -231,9 +228,9 @@ wfLoadExtension( 'MultimediaViewer', "$ysyExtensionsPath/MultimediaViewer/extens
 wfLoadExtension( 'MyVariables', "$ysyExtensionsPath/MyVariables/extension.json" );
 
 // N
-#wfLoadExtension( 'NativeSvgHandler', "$ysyExtensionsPath/NativeSvgHandler/extension.json" );
-
 wfLoadExtension( 'NewSignupPage', "$ysyExtensionsPath/NewSignupPage/extension.json" );
+$wgNewSignupPageToSURL = 'https://youshou.wiki/wiki/LIB:TOS';
+$wgNewSignupPagePPURL = 'https://youshou.wiki/wiki/LIB:PIPP';
 
 wfLoadExtension( 'NewUserMessage', "$ysyExtensionsPath/NewUserMessage/extension.json" );
 
