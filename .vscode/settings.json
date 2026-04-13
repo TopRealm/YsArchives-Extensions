@@ -6,5 +6,6 @@
         "submodules",
         "HeaderTabs",
         "LoadExtensions.php"
-    ]
+    ],
+    "git.detectSubmodules": false
 }

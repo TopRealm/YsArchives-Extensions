@@ -326,8 +326,8 @@ enableSemantics('youshou.wiki');
 /// SMW语义维基配置及插件配置、调优
 #$smwgEnabledFulltextSearch = true;
 $smwgQMaxLimit = 5000;
-$smwgQEqualitySupport = SMW_EQ_NONE;
-$smwgQueryResultCacheType = CACHE_ANYTHING;
+$smwgQEqualitySupport = 1;
+$smwgQueryResultCacheType = -1;
 $smwgQMaxSize = 10;
 $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = false;
 
