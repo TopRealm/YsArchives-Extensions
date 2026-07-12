@@ -297,6 +297,8 @@ $wgPopupsHideOptInOnPreferencesPage = true;
 $wgPopupsReferencePreviewsBetaFeature = false;
 
 // Q
+wfLoadExtension( 'QQConnect', "$ysyExtensionsPath/QQConnect/extension.json" );
+require_once "$ysySettingsPath/QQConnectSettings.php";
 
 // R
 wfLoadExtension( 'Renameuser', "$ysyExtensionsPath/Renameuser/extension.json" );

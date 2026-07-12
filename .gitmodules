@@ -442,3 +442,6 @@
 	path = DynamicPageList4
 	url = https://git.qiuwen.net.cn/Mirror/DynamicPageList4
 	branch = REL1_43
+[submodule "QQConnect"]
+	path = QQConnect
+	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-QQConnect
