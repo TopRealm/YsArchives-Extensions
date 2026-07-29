@@ -324,11 +324,10 @@ wfLoadExtension( 'SearchVue', "$ysyExtensionsPath/SearchVue/extension.json" );
 wfLoadExtension( 'SecureLinkFixer', "$ysyExtensionsPath/SecureLinkFixer/extension.json" );
 
 wfLoadExtension( 'SemanticMediaWiki', "$ysyExtensionsPath/SemanticMediaWiki/extension.json" );
-enableSemantics('youshou.wiki');
 /// SMW语义维基配置及插件配置、调优
 #$smwgEnabledFulltextSearch = true;
 $smwgQMaxLimit = 5000;
-$smwgQEqualitySupport = 1;
+$smwgQEqualitySupport = 'SOME';
 $smwgQueryResultCacheType = -1;
 $smwgQMaxSize = 10;
 $wgDefaultUserOptions['smw-prefs-general-options-show-entity-issue-panel'] = false;
