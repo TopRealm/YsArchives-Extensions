@@ -189,6 +189,27 @@ wfLoadExtension( 'InterwikiExtracts', "$ysyExtensionsPath/InterwikiExtracts/exte
 
 // J
 wfLoadExtension( 'JsonConfig', "$ysyExtensionsPath/JsonConfig/extension.json" );
+/// JsonConfig 模型和数据源注册（Chart 扩展依赖 .chart / .tab 页面）
+$wgJsonConfigModels = $wgJsonConfigModels ?? [];
+$wgJsonConfigs = $wgJsonConfigs ?? [];
+
+$wgJsonConfigModels['Tabular.JsonConfig'] = 'JsonConfig\JCTabularContent';
+$wgJsonConfigs['Tabular.JsonConfig'] = [
+	'namespace' => 486,
+	'nsName' => 'Data',
+	'pattern' => '/.\.tab$/',
+	'license' => 'CC0-1.0',
+	'isLocal' => true,
+];
+
+$wgJsonConfigModels['Chart.JsonConfig'] = 'MediaWiki\Extension\Chart\JCChartContent';
+$wgJsonConfigs['Chart.JsonConfig'] = [
+	'namespace' => 486,
+	'nsName' => 'Data',
+	'pattern' => '/.\.chart$/',
+	'license' => 'CC0-1.0',
+	'isLocal' => true,
+];
 
 // K
 
