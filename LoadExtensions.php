@@ -16,8 +16,8 @@ wfLoadExtension( 'AbuseFilter', "$ysyExtensionsPath/AbuseFilter/extension.json" 
 $wgAbuseFilterEnableBlockedExternalDomain = true;
 
 wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
-$wgAddImgTagBlacklist = true;
-$wgAddImgTagBlacklistDomainsList = ['upload.wikimedia.org'];
+$wgAddImgTagWhitelist = true;
+$wgAddImgTagWhitelistDomainsList = ['*.afdian.com', '*.youshou.wiki'];
 
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
