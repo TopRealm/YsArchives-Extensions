@@ -17,7 +17,7 @@ $wgAbuseFilterEnableBlockedExternalDomain = true;
 
 wfLoadExtension( 'AddImgTag', "$ysyExtensionsPath/AddImgTag/extension.json" );
 $wgAddImgTagWhitelist = true;
-$wgAddImgTagWhitelistDomainsList = ['*.afdian.com', '*.youshou.wiki'];
+$wgAddImgTagWhitelistDomainsList = ['*.afdian.com', '*.youshou.wiki', '*.zorua.top'];
 
 wfLoadExtension( 'AdvancedSearch', "$ysyExtensionsPath/AdvancedSearch/extension.json" );
 ##$wgAdvancedSearchHighlighting = true;
