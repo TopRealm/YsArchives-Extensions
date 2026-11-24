@@ -445,3 +445,7 @@
 [submodule "QQConnect"]
 	path = QQConnect
 	url = https://git.qiuwen.net.cn/YSARXIV/mediawiki-extensions-QQConnect
+[submodule "RelatedArticles"]
+	path = RelatedArticles
+	url = https://git.qiuwen.net.cn/Mirror/mediawiki-extensions-RelatedArticles
+	branch = REL1_43
