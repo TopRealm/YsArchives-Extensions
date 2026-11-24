@@ -326,6 +326,11 @@ wfLoadExtension( 'Renameuser', "$ysyExtensionsPath/Renameuser/extension.json" );
 
 wfLoadExtension( 'RegexFunctions', "$ysyExtensionsPath/RegexFunctions/extension.json" );
 
+wfLoadExtension( 'RelatedArticles', "$ysyExtensionsPath/RelatedArticles/extension.json" );
+/// RelatedArticles：页底“阅读更多”相关条目，新版已无 BetaFeatures 开关，默认对所有用户启用
+$wgRelatedArticlesUseCirrusSearch = true;
+$wgRelatedArticlesUseCirrusSearchApiUrl = '/api.php';
+
 wfLoadExtension( 'ReplaceText', "$ysyExtensionsPath/ReplaceText/extension.json" );
 
 wfLoadExtension( 'RevisionSlider', "$ysyExtensionsPath/RevisionSlider/extension.json" );
